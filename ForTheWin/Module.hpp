@@ -1,0 +1,38 @@
+/*
+ *	ForTheWin: A modular windoze utility program.
+ *	This file is part of ForTheWin.
+ *
+ *	Copyright (C) 2012 Zach Caldwell
+ *
+ * ForTheWin is free software: you can redistribute it and/or modify
+ *	it under the terms of the GNU General Public License as published by
+ *	the Free Software Foundation, either version 3 of the License, or
+ *	(at your option) any later version.
+ *
+ * ForTheWin is distributed in the hope that it will be useful,
+ *	but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *	GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ *	along with ForTheWin.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+#ifndef _Module_hpp_
+#define _Module_hpp_
+
+#include <string>
+
+namespace ForTheWin {
+	class Module {
+		public:
+			/// \brief Called when the user selects the module in the chooser.
+			virtual void go() = 0;
+
+			/// \brief Get the module name.
+			/// \remarks This is what gets displayed in the chooser list.
+			virtual const char* getName() = 0;
+	};
+} //namespace ForTheWin
+
+#endif //_Module_hpp_

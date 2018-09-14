@@ -1,0 +1,375 @@
+<!--
+ * Copyright (C) 2012 sherlock42
+ *
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/.
+ -->
+<fireworks>
+	<System
+		screenX = "1024"
+		screenY = "768"
+		fullscreen = "true"
+		antiAliasing = "true"
+		emitters = "7"
+
+		red = "1"
+		green = "1"
+		blue = "1"
+		brightness = "1"
+		contrast = "1"
+
+		cameraX = "900"
+		cameraY = "700"
+	/>
+
+	<Emitter1
+		emitterType = "Point"
+		sound = "fireworks.ogg"
+		minX = "100"
+		maxX = "1700"
+		minY = "0"
+		maxY = "250"
+		minZ = "1000"
+		maxZ = "1000"
+		directionY = "2.15"
+		minPPS = "350"
+		maxPPS = "375"
+		minStartRed = "250"
+		maxStartRed = "255"
+		minStartGreen = "250"
+		maxStartGreen = "255"
+		minStartBlue = "96"
+		maxStartBlue = "127"
+		lifeTimeMin = "800"
+		lifeTimeMax = "850"
+		minTime = "400"
+		maxTime = "450"
+		minSpawnTime = "1500"
+		maxSpawnTime = "2250"
+		maxAngle = "15"
+		minStartSize = "23"
+		maxStartSize = "25"
+		texture = "flare.png"
+		zWrite = "false"
+		affectors = "3"
+	>
+		<Affector1
+			affectorType = "Gravity"
+			gravityY = "-1.5"
+			gravFullTime = "1150"
+		/>
+		<Affector2
+			affectorType = "Scale"
+			scaleToX = "0.1"
+			scaleToY = "0.1"
+		/>
+		<Affector3
+			affectorType = "FadeOut"
+			fadeTime = "850"
+			fadeColorRed = "32"
+			fadeColorGreen = "32"
+			fadeColorBlue = "8"
+		/>
+	</Emitter1>
+
+	<Emitter2
+		emitterType = "Point"
+		sound = "fireworks.ogg"
+		minX = "100"
+		maxX = "1700"
+		minY = "0"
+		maxY = "250"
+		minZ = "1000"
+		maxZ = "1000"
+		directionY = "2.15"
+		minPPS = "350"
+		maxPPS = "375"
+		minStartRed = "96"
+		maxStartRed = "127"
+		minStartGreen = "250"
+		maxStartGreen = "255"
+		minStartBlue = "250"
+		maxStartBlue = "255"
+		lifeTimeMin = "800"
+		lifeTimeMax = "850"
+		minTime = "400"
+		maxTime = "450"
+		minSpawnTime = "1500"
+		maxSpawnTime = "2250"
+		maxAngle = "15"
+		minStartSize = "23"
+		maxStartSize = "25"
+		texture = "flare.png"
+		zWrite = "false"
+		affectors = "3"
+	>
+		<Affector1
+			affectorType = "Gravity"
+			gravityY = "-1.5"
+			gravFullTime = "1150"
+		/>
+		<Affector2
+			affectorType = "Scale"
+			scaleToX = "0.1"
+			scaleToY = "0.1"
+		/>
+		<Affector3
+			affectorType = "FadeOut"
+			fadeTime = "850"
+			fadeColorRed = "8"
+			fadeColorGreen = "32"
+			fadeColorBlue = "32"
+		/>
+	</Emitter2>
+
+	<Emitter3
+		emitterType = "Point"
+		sound = "fireworks.ogg"
+		minX = "100"
+		maxX = "1700"
+		minY = "0"
+		maxY = "250"
+		minZ = "1000"
+		maxZ = "1000"
+		directionY = "2.15"
+		minPPS = "350"
+		maxPPS = "375"
+		minStartRed = "250"
+		maxStartRed = "255"
+		minStartGreen = "96"
+		maxStartGreen = "127"
+		minStartBlue = "250"
+		maxStartBlue = "255"
+		lifeTimeMin = "800"
+		lifeTimeMax = "850"
+		minTime = "400"
+		maxTime = "450"
+		minSpawnTime = "1500"
+		maxSpawnTime = "2250"
+		maxAngle = "15"
+		minStartSize = "23"
+		maxStartSize = "25"
+		texture = "flare.png"
+		zWrite = "false"
+		affectors = "3"
+	>
+		<Affector1
+			affectorType = "Gravity"
+			gravityY = "-1.5"
+			gravFullTime = "1150"
+		/>
+		<Affector2
+			affectorType = "Scale"
+			scaleToX = "0.1"
+			scaleToY = "0.1"
+		/>
+		<Affector3
+			affectorType = "FadeOut"
+			fadeTime = "850"
+			fadeColorRed = "32"
+			fadeColorGreen = "8"
+			fadeColorBlue = "32"
+		/>
+	</Emitter3>
+
+	<Emitter4
+		emitterType = "Point"
+		sound = "fireworks.ogg"
+		minX = "100"
+		maxX = "1700"
+		minY = "0"
+		maxY = "250"
+		minZ = "1000"
+		maxZ = "1000"
+		directionY = "2.15"
+		minPPS = "350"
+		maxPPS = "375"
+		minStartRed = "250"
+		maxStartRed = "255"
+		minStartGreen = "96"
+		maxStartGreen = "127"
+		minStartBlue = "96"
+		maxStartBlue = "127"
+		lifeTimeMin = "800"
+		lifeTimeMax = "850"
+		minTime = "400"
+		maxTime = "450"
+		minSpawnTime = "1500"
+		maxSpawnTime = "2250"
+		maxAngle = "15"
+		minStartSize = "23"
+		maxStartSize = "25"
+		texture = "flare.png"
+		zWrite = "false"
+		affectors = "3"
+	>
+		<Affector1
+			affectorType = "Gravity"
+			gravityY = "-1.5"
+			gravFullTime = "1150"
+		/>
+		<Affector2
+			affectorType = "Scale"
+			scaleToX = "0.1"
+			scaleToY = "0.1"
+		/>
+		<Affector3
+			affectorType = "FadeOut"
+			fadeTime = "850"
+			fadeColorRed = "32"
+			fadeColorGreen = "8"
+			fadeColorBlue = "8"
+		/>
+	</Emitter4>
+
+	<Emitter5
+		emitterType = "Point"
+		sound = "fireworks.ogg"
+		minX = "100"
+		maxX = "1700"
+		minY = "0"
+		maxY = "250"
+		minZ = "1000"
+		maxZ = "1000"
+		directionY = "2.15"
+		minPPS = "350"
+		maxPPS = "375"
+		minStartRed = "96"
+		maxStartRed = "127"
+		minStartGreen = "250"
+		maxStartGreen = "255"
+		minStartBlue = "96"
+		maxStartBlue = "127"
+		lifeTimeMin = "800"
+		lifeTimeMax = "850"
+		minTime = "400"
+		maxTime = "450"
+		minSpawnTime = "1500"
+		maxSpawnTime = "2250"
+		maxAngle = "15"
+		minStartSize = "23"
+		maxStartSize = "25"
+		texture = "flare.png"
+		zWrite = "false"
+		affectors = "3"
+	>
+		<Affector1
+			affectorType = "Gravity"
+			gravityY = "-1.5"
+			gravFullTime = "1150"
+		/>
+		<Affector2
+			affectorType = "Scale"
+			scaleToX = "0.1"
+			scaleToY = "0.1"
+		/>
+		<Affector3
+			affectorType = "FadeOut"
+			fadeTime = "850"
+			fadeColorRed = "8"
+			fadeColorGreen = "32"
+			fadeColorBlue = "8"
+		/>
+	</Emitter5>
+
+	<Emitter6
+		emitterType = "Point"
+		sound = "fireworks.ogg"
+		minX = "100"
+		maxX = "1700"
+		minY = "0"
+		maxY = "250"
+		minZ = "1000"
+		maxZ = "1000"
+		directionY = "2.15"
+		minPPS = "350"
+		maxPPS = "375"
+		minStartRed = "96"
+		maxStartRed = "127"
+		minStartGreen = "96"
+		maxStartGreen = "127"
+		minStartBlue = "250"
+		maxStartBlue = "255"
+		lifeTimeMin = "800"
+		lifeTimeMax = "850"
+		minTime = "400"
+		maxTime = "450"
+		minSpawnTime = "1500"
+		maxSpawnTime = "2250"
+		maxAngle = "15"
+		minStartSize = "23"
+		maxStartSize = "25"
+		texture = "flare.png"
+		zWrite = "false"
+		affectors = "3"
+	>
+		<Affector1
+			affectorType = "Gravity"
+			gravityY = "-1.5"
+			gravFullTime = "1150"
+		/>
+		<Affector2
+			affectorType = "Scale"
+			scaleToX = "0.1"
+			scaleToY = "0.1"
+		/>
+		<Affector3
+			affectorType = "FadeOut"
+			fadeTime = "850"
+			fadeColorRed = "8"
+			fadeColorGreen = "8"
+			fadeColorBlue = "32"
+		/>
+	</Emitter6>
+
+	<Emitter7
+		emitterType = "Point"
+		sound = "fireworks.ogg"
+		minX = "100"
+		maxX = "1700"
+		minY = "0"
+		maxY = "250"
+		minZ = "1000"
+		maxZ = "1000"
+		directionY = "2.15"
+		minPPS = "350"
+		maxPPS = "375"
+		minStartRed = "250"
+		maxStartRed = "255"
+		minStartGreen = "250"
+		maxStartGreen = "255"
+		minStartBlue = "250"
+		maxStartBlue = "255"
+		lifeTimeMin = "800"
+		lifeTimeMax = "850"
+		minTime = "400"
+		maxTime = "450"
+		minSpawnTime = "1500"
+		maxSpawnTime = "2250"
+		maxAngle = "15"
+		minStartSize = "23"
+		maxStartSize = "25"
+		texture = "flare.png"
+		zWrite = "false"
+		affectors = "3"
+	>
+		<Affector1
+			affectorType = "Gravity"
+			gravityY = "-1.5"
+			gravFullTime = "1150"
+		/>
+		<Affector2
+			affectorType = "Scale"
+			scaleToX = "0.1"
+			scaleToY = "0.1"
+		/>
+		<Affector3
+			affectorType = "FadeOut"
+			fadeTime = "850"
+			fadeColorRed = "32"
+			fadeColorGreen = "32"
+			fadeColorBlue = "32"
+		/>
+	</Emitter7>
+</fireworks>

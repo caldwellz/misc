@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Overmind
+GenericName=3D RPG
+Comment=Play a 3D RPG game
+TryExec=overmind
+Exec=overmind
+Icon=overmind
+Categories=Game;ArcadeGame;
+StartupNotify=true
+Terminal=false

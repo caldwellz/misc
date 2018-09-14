@@ -1,0 +1,27 @@
+
+//Version
+#define MAJOR_VERSION (@MAJOR_VERSION@)
+#define MINOR_VERSION (@MINOR_VERSION@)
+#define PATCH_VERSION (@PATCH_VERSION@)
+#define VERSION_STRING "@VERSION_STRING@"
+
+//Debug defines - make sure we later only need check _DEBUG
+#ifndef DEBUG
+	#cmakedefine DEBUG
+#endif
+#ifndef NDEBUG
+	#cmakedefine NDEBUG
+#endif
+#ifdef DEBUG
+	#ifndef _DEBUG
+		#define _DEBUG
+	#endif
+#endif
+//NDEBUG takes priority
+#if defined NDEBUG || defined _NDEBUG
+	#ifdef _DEBUG
+		#undef _DEBUG
+	#endif
+#endif
+
+#define DATA_DIR "@INSTALL_DATA_DIR@"

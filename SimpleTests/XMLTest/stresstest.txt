@@ -1,0 +1,1205 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+ 36.45      5.15     5.15    26005     0.20     0.53  tinyxml2::XMLNode::FirstChildElement(char const*) const
+ 32.48      9.74     4.59 323796339     0.00     0.00  tinyxml2::XMLUtil::StringEqual(char const*, char const*, int)
+ 11.85     11.41     1.68 323875335     0.00     0.00  tinyxml2::StrPair::GetStr()
+  7.01     12.40     0.99 323646331     0.00     0.00  tinyxml2::XMLNode::Value() const
+  6.02     13.26     0.85 323646330     0.00     0.00  tinyxml2::XMLElement::Name() const
+  4.53     13.89     0.64 323621333     0.00     0.00  tinyxml2::XMLElement::ToElement()
+  0.18     13.92     0.03   150000     0.00     0.00  tinyxml2::StrPair::SetStr(char const*, int)
+  0.14     13.94     0.02                             __gdtoa
+  0.14     13.96     0.02                             __mingw_pformat
+  0.14     13.98     0.02                             __pformat_int
+  0.14     14.00     0.02                             __pformat_putc
+  0.11     14.02     0.01        1    15.00    15.00  tinyxml2::XMLUtil::ReadBOM(char const*, bool*)
+  0.07     14.03     0.01   125007     0.00     0.00  tinyxml2::XMLPrinter::Print(char const*, ...)
+  0.07     14.04     0.01    25005     0.00     0.00  tinyxml2::XMLNode::DeleteChildren()
+  0.07     14.04     0.01    25000     0.00     0.00  tinyxml2::XMLPrinter::PrintString(char const*, bool)
+  0.07     14.05     0.01    25000     0.00     0.00  tinyxml2::XMLAttribute::SetAttribute(bool)
+  0.07     14.06     0.01    25000     0.00     0.00  tinyxml2::XMLNode::SetValue(char const*, bool)
+  0.07     14.07     0.01    25000     0.00     0.00  tinyxml2::MemPoolT<36>::Alloc()
+  0.07     14.09     0.01                             __chkstk_ms
+  0.07     14.10     0.01                             __freedtoa
+  0.07     14.11     0.01                             _fu0___ZSt4cout
+  0.07     14.12     0.01                             snprintf
+  0.04     14.12     0.01   225007     0.00     0.00  tinyxml2::StrPair::Reset()
+  0.04     14.12     0.01    25002     0.00     0.00  tinyxml2::XMLPrinter::OpenElement(char const*)
+  0.04     14.13     0.01                             tinyxml2::XMLPrinter::PushHeader(bool, bool)
+  0.00     14.13     0.00   200004     0.00     0.00  tinyxml2::XMLAttribute::Name() const
+  0.00     14.13     0.00   125009     0.00     0.00  tinyxml2::DynArray<char, 20>::EnsureCapacity(int)
+  0.00     14.13     0.00   125007     0.00     0.00  tinyxml2::DynArray<char, 20>::PushArr(int)
+  0.00     14.13     0.00   100004     0.00     0.00  tinyxml2::XMLElement::FindAttribute(char const*) const
+  0.00     14.13     0.00   100000     0.00     0.00  tinyxml2::XMLElement::FindOrCreateAttribute(char const*)
+  0.00     14.13     0.00    76000     0.00     0.00  tinyxml2::XMLUtil::ToStr(int, char*, int)
+  0.00     14.13     0.00    75005     0.00     0.00  tinyxml2::StrPair::StrPair()
+  0.00     14.13     0.00    75005     0.00     0.00  tinyxml2::StrPair::~StrPair()
+  0.00     14.13     0.00    50002     0.00     0.00  operator new(unsigned int, void*)
+  0.00     14.13     0.00    29000     0.00     0.00  tinyxml2::XMLAttribute::Value() const
+  0.00     14.13     0.00    26005     0.00     0.53  tinyxml2::XMLNode::FirstChildElement(char const*)
+  0.00     14.13     0.00    25003     0.00     0.00  tinyxml2::XMLNode::XMLNode(tinyxml2::XMLDocument*)
+  0.00     14.13     0.00    25003     0.00     0.00  tinyxml2::XMLNode::~XMLNode()
+  0.00     14.13     0.00    25002     0.00     0.00  tinyxml2::XMLPrinter::CloseElement()
+  0.00     14.13     0.00    25002     0.00     0.00  tinyxml2::XMLNode::InsertEndChild(tinyxml2::XMLNode*)
+  0.00     14.13     0.00    25002     0.00     0.00  tinyxml2::XMLNode::Unlink(tinyxml2::XMLNode*)
+  0.00     14.13     0.00    25002     0.00     0.00  tinyxml2::DynArray<char const*, 10>::EnsureCapacity(int)
+  0.00     14.13     0.00    25002     0.00     0.00  tinyxml2::DynArray<char const*, 10>::Pop()
+  0.00     14.13     0.00    25002     0.00     0.00  tinyxml2::DynArray<char const*, 10>::Push(char const*)
+  0.00     14.13     0.00    25002     0.00     0.00  tinyxml2::XMLNode::FirstChild() const
+  0.00     14.13     0.00    25002     0.00     0.00  tinyxml2::XMLNode::NextSibling() const
+  0.00     14.13     0.00    25001     0.00     0.00  tinyxml2::XMLElement::XMLElement(tinyxml2::XMLDocument*)
+  0.00     14.13     0.00    25001     0.00     0.00  tinyxml2::XMLElement::~XMLElement()
+  0.00     14.13     0.00    25001     0.00     0.00  tinyxml2::XMLPrinter::VisitEnter(tinyxml2::XMLElement const&, tinyxml2::XMLAttribute const*)
+  0.00     14.13     0.00    25001     0.00     0.00  tinyxml2::XMLPrinter::VisitExit(tinyxml2::XMLElement const&)
+  0.00     14.13     0.00    25001     0.00     0.00  tinyxml2::MemPoolT<52>::SetTracked()
+  0.00     14.13     0.00    25001     0.00     0.00  tinyxml2::MemPoolT<52>::Free(void*)
+  0.00     14.13     0.00    25001     0.00     0.00  tinyxml2::MemPoolT<52>::Alloc()
+  0.00     14.13     0.00    25001     0.00     0.00  tinyxml2::XMLElement::IntAttribute(char const*) const
+  0.00     14.13     0.00    25001     0.00     0.00  tinyxml2::XMLElement::BoolAttribute(char const*) const
+  0.00     14.13     0.00    25001     0.00     0.00  tinyxml2::XMLElement::FloatAttribute(char const*) const
+  0.00     14.13     0.00    25001     0.00     0.00  tinyxml2::XMLElement::QueryIntAttribute(char const*, int*) const
+  0.00     14.13     0.00    25001     0.00     0.00  tinyxml2::XMLElement::QueryBoolAttribute(char const*, bool*) const
+  0.00     14.13     0.00    25001     0.00     0.00  tinyxml2::XMLElement::QueryFloatAttribute(char const*, float*) const
+  0.00     14.13     0.00    25001     0.00     0.00  tinyxml2::XMLElement::Attribute(char const*, char const*) const
+  0.00     14.13     0.00    25000     0.00     0.00  tinyxml2::XMLElement::SetAttribute(char const*, char const*)
+  0.00     14.13     0.00    25000     0.00     0.00  tinyxml2::XMLElement::SetAttribute(char const*, bool)
+  0.00     14.13     0.00    25000     0.00     0.00  tinyxml2::XMLElement::SetAttribute(char const*, double)
+  0.00     14.13     0.00    25000     0.00     0.00  tinyxml2::XMLElement::SetAttribute(char const*, int)
+  0.00     14.13     0.00    25000     0.00     0.00  tinyxml2::XMLElement::SetName(char const*, bool)
+  0.00     14.13     0.00    25000     0.00     0.00  tinyxml2::XMLPrinter::PushAttribute(char const*, char const*)
+  0.00     14.13     0.00    25000     0.00     0.00  tinyxml2::XMLDocument::NewElement(char const*)
+  0.00     14.13     0.00    25000     0.00     0.00  tinyxml2::XMLAttribute::SetAttribute(char const*)
+  0.00     14.13     0.00    25000     0.00     0.00  tinyxml2::XMLAttribute::SetAttribute(double)
+  0.00     14.13     0.00    25000     0.00     0.00  tinyxml2::XMLAttribute::SetAttribute(int)
+  0.00     14.13     0.00    25000     0.00     0.00  tinyxml2::XMLAttribute::SetName(char const*)
+  0.00     14.13     0.00    25000     0.00     0.00  tinyxml2::XMLAttribute::XMLAttribute()
+  0.00     14.13     0.00    25000     0.00     0.00  tinyxml2::XMLAttribute::~XMLAttribute()
+  0.00     14.13     0.00    25000     0.00     0.00  tinyxml2::XMLUtil::ToStr(bool, char*, int)
+  0.00     14.13     0.00    25000     0.00     0.00  tinyxml2::XMLUtil::ToStr(double, char*, int)
+  0.00     14.13     0.00    25000     0.00     0.00  tinyxml2::MemPoolT<36>::SetTracked()
+  0.00     14.13     0.00    25000     0.00     0.00  tinyxml2::MemPoolT<36>::Free(void*)
+  0.00     14.13     0.00    25000     0.00     0.00  tinyxml2::XMLAttribute::Next() const
+  0.00     14.13     0.00    25000     0.00     0.00  std::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*)
+  0.00     14.13     0.00     2000     0.00     0.00  tinyxml2::XMLUtil::ToInt(char const*, int*)
+  0.00     14.13     0.00     1000     0.00     0.01  tinyxml2::XMLNode::DeleteChild(tinyxml2::XMLNode*)
+  0.00     14.13     0.00     1000     0.00     0.00  tinyxml2::XMLUtil::ToBool(char const*, bool*)
+  0.00     14.13     0.00     1000     0.00     0.00  tinyxml2::XMLUtil::ToFloat(char const*, float*)
+  0.00     14.13     0.00     1000     0.00     0.00  tinyxml2::XMLAttribute::QueryIntValue(int*) const
+  0.00     14.13     0.00     1000     0.00     0.00  tinyxml2::XMLAttribute::QueryBoolValue(bool*) const
+  0.00     14.13     0.00     1000     0.00     0.00  tinyxml2::XMLAttribute::QueryFloatValue(float*) const
+  0.00     14.13     0.00      322     0.00     0.00  tinyxml2::DynArray<tinyxml2::MemPoolT<52>::Block*, 10>::Size() const
+  0.00     14.13     0.00      321     0.00     0.00  tinyxml2::DynArray<tinyxml2::MemPoolT<52>::Block*, 10>::EnsureCapacity(int)
+  0.00     14.13     0.00      321     0.00     0.00  tinyxml2::DynArray<tinyxml2::MemPoolT<52>::Block*, 10>::Push(tinyxml2::MemPoolT<52>::Block*)
+  0.00     14.13     0.00      321     0.00     0.00  tinyxml2::DynArray<tinyxml2::MemPoolT<52>::Block*, 10>::operator[](int)
+  0.00     14.13     0.00      223     0.00     0.00  tinyxml2::DynArray<tinyxml2::MemPoolT<36>::Block*, 10>::Size() const
+  0.00     14.13     0.00      222     0.00     0.00  tinyxml2::DynArray<tinyxml2::MemPoolT<36>::Block*, 10>::EnsureCapacity(int)
+  0.00     14.13     0.00      222     0.00     0.00  tinyxml2::DynArray<tinyxml2::MemPoolT<36>::Block*, 10>::Push(tinyxml2::MemPoolT<36>::Block*)
+  0.00     14.13     0.00      222     0.00     0.00  tinyxml2::DynArray<tinyxml2::MemPoolT<36>::Block*, 10>::operator[](int)
+  0.00     14.13     0.00        6     0.00     0.00  tinyxml2::XMLUtil::IsNameStartChar(unsigned char)
+  0.00     14.13     0.00        5     0.00     0.00  tinyxml2::XMLUtil::IsUTF8Continuation(char)
+  0.00     14.13     0.00        4     0.00     0.00  tinyxml2::MemPool::MemPool()
+  0.00     14.13     0.00        4     0.00     0.00  tinyxml2::MemPool::~MemPool()
+  0.00     14.13     0.00        4     0.00     0.00  tinyxml2::XMLUtil::IsNameChar(unsigned char)
+  0.00     14.13     0.00        4     0.00     0.00  tinyxml2::XMLUtil::SkipWhiteSpace(char*)
+  0.00     14.13     0.00        4     0.00     0.00  tinyxml2::StrPair::Empty() const
+  0.00     14.13     0.00        3     0.00     0.00  tinyxml2::XMLNode::ToElement()
+  0.00     14.13     0.00        2     0.00     0.00  tinyxml2::XMLPrinter::SealElement()
+  0.00     14.13     0.00        2     0.00     0.00  tinyxml2::XMLPrinter::XMLPrinter(_iobuf*, bool, int)
+  0.00     14.13     0.00        2     0.00     0.00  tinyxml2::XMLPrinter::~XMLPrinter()
+  0.00     14.13     0.00        2     0.00     0.00  tinyxml2::XMLVisitor::XMLVisitor()
+  0.00     14.13     0.00        2     0.00     0.00  tinyxml2::XMLVisitor::~XMLVisitor()
+  0.00     14.13     0.00        2     0.00     0.00  tinyxml2::XMLDocument::Identify(char*, tinyxml2::XMLNode**)
+  0.00     14.13     0.00        2     0.00     0.00  tinyxml2::StrPair::Set(char*, char*, int)
+  0.00     14.13     0.00        2     0.00     0.00  tinyxml2::DynArray<char const*, 10>::DynArray()
+  0.00     14.13     0.00        2     0.00     0.00  tinyxml2::DynArray<char const*, 10>::~DynArray()
+  0.00     14.13     0.00        2     0.00     0.00  tinyxml2::DynArray<char, 20>::Push(char)
+  0.00     14.13     0.00        2     0.00     0.00  tinyxml2::DynArray<char, 20>::DynArray()
+  0.00     14.13     0.00        2     0.00     0.00  tinyxml2::DynArray<char, 20>::~DynArray()
+  0.00     14.13     0.00        2     0.00     0.00  tinyxml2::XMLElement::ClosingType() const
+  0.00     14.13     0.00        2     0.00     0.00  tinyxml2::DynArray<tinyxml2::MemPoolT<44>::Block*, 10>::Size() const
+  0.00     14.13     0.00        1     0.00     0.00  tinyxml2::XMLElement::ParseAttributes(char*)
+  0.00     14.13     0.00        1     0.00     0.00  tinyxml2::XMLElement::ParseDeep(char*, tinyxml2::StrPair*)
+  0.00     14.13     0.00        1     0.00     0.00  tinyxml2::XMLPrinter::VisitEnter(tinyxml2::XMLDocument const&)
+  0.00     14.13     0.00        1     0.00     0.00  tinyxml2::XMLPrinter::PushDeclaration(char const*)
+  0.00     14.13     0.00        1     0.00     0.00  tinyxml2::XMLPrinter::Visit(tinyxml2::XMLDeclaration const&)
+  0.00     14.13     0.00        1     0.00     0.00  tinyxml2::XMLPrinter::VisitExit(tinyxml2::XMLDocument const&)
+  0.00     14.13     0.00        1     0.00     0.53  tinyxml2::XMLDocument::RootElement()
+  0.00     14.13     0.00        1     0.00     0.01  tinyxml2::XMLDocument::Clear()
+  0.00     14.13     0.00        1     0.00    15.01  tinyxml2::XMLDocument::Parse(char const*, unsigned int)
+  0.00     14.13     0.00        1     0.00     0.00  tinyxml2::XMLDocument::XMLDocument(bool, tinyxml2::Whitespace)
+  0.00     14.13     0.00        1     0.00     0.02  tinyxml2::XMLDocument::~XMLDocument()
+  0.00     14.13     0.00        1     0.00     0.00  tinyxml2::XMLDeclaration::ParseDeep(char*, tinyxml2::StrPair*)
+  0.00     14.13     0.00        1     0.00     0.00  tinyxml2::XMLDeclaration::XMLDeclaration(tinyxml2::XMLDocument*)
+  0.00     14.13     0.00        1     0.00     0.00  tinyxml2::XMLDeclaration::~XMLDeclaration()
+  0.00     14.13     0.00        1     0.00     0.00  tinyxml2::StrPair::ParseName(char*)
+  0.00     14.13     0.00        1     0.00     0.00  tinyxml2::StrPair::ParseText(char*, char const*, int)
+  0.00     14.13     0.00        1     0.00     0.00  tinyxml2::XMLNode::ParseDeep(char*, tinyxml2::StrPair*)
+  0.00     14.13     0.00        1     0.00     0.00  tinyxml2::XMLUtil::SkipWhiteSpace(char const*)
+  0.00     14.13     0.00        1     0.00     0.00  tinyxml2::DynArray<tinyxml2::MemPoolT<36>::Block*, 10>::DynArray()
+  0.00     14.13     0.00        1     0.00     0.00  tinyxml2::DynArray<tinyxml2::MemPoolT<36>::Block*, 10>::~DynArray()
+  0.00     14.13     0.00        1     0.00     0.00  tinyxml2::DynArray<tinyxml2::MemPoolT<44>::Block*, 10>::EnsureCapacity(int)
+  0.00     14.13     0.00        1     0.00     0.00  tinyxml2::DynArray<tinyxml2::MemPoolT<44>::Block*, 10>::Push(tinyxml2::MemPoolT<44>::Block*)
+  0.00     14.13     0.00        1     0.00     0.00  tinyxml2::DynArray<tinyxml2::MemPoolT<44>::Block*, 10>::DynArray()
+  0.00     14.13     0.00        1     0.00     0.00  tinyxml2::DynArray<tinyxml2::MemPoolT<44>::Block*, 10>::~DynArray()
+  0.00     14.13     0.00        1     0.00     0.00  tinyxml2::DynArray<tinyxml2::MemPoolT<44>::Block*, 10>::operator[](int)
+  0.00     14.13     0.00        1     0.00     0.00  tinyxml2::DynArray<tinyxml2::MemPoolT<48>::Block*, 10>::DynArray()
+  0.00     14.13     0.00        1     0.00     0.00  tinyxml2::DynArray<tinyxml2::MemPoolT<48>::Block*, 10>::~DynArray()
+  0.00     14.13     0.00        1     0.00     0.00  tinyxml2::DynArray<tinyxml2::MemPoolT<52>::Block*, 10>::DynArray()
+  0.00     14.13     0.00        1     0.00     0.00  tinyxml2::DynArray<tinyxml2::MemPoolT<52>::Block*, 10>::~DynArray()
+  0.00     14.13     0.00        1     0.00     0.00  tinyxml2::MemPoolT<36>::MemPoolT()
+  0.00     14.13     0.00        1     0.00     0.00  tinyxml2::MemPoolT<36>::~MemPoolT()
+  0.00     14.13     0.00        1     0.00     0.00  tinyxml2::MemPoolT<44>::SetTracked()
+  0.00     14.13     0.00        1     0.00     0.00  tinyxml2::MemPoolT<44>::Free(void*)
+  0.00     14.13     0.00        1     0.00     0.00  tinyxml2::MemPoolT<44>::Alloc()
+  0.00     14.13     0.00        1     0.00     0.00  tinyxml2::MemPoolT<44>::MemPoolT()
+  0.00     14.13     0.00        1     0.00     0.00  tinyxml2::MemPoolT<44>::~MemPoolT()
+  0.00     14.13     0.00        1     0.00     0.00  tinyxml2::MemPoolT<48>::MemPoolT()
+  0.00     14.13     0.00        1     0.00     0.00  tinyxml2::MemPoolT<48>::~MemPoolT()
+  0.00     14.13     0.00        1     0.00     0.00  tinyxml2::MemPoolT<52>::MemPoolT()
+  0.00     14.13     0.00        1     0.00     0.00  tinyxml2::MemPoolT<52>::~MemPoolT()
+  0.00     14.13     0.00        1     0.00    25.53  tinyxml2::XMLElement::Accept(tinyxml2::XMLVisitor*) const
+  0.00     14.13     0.00        1     0.00     0.00  tinyxml2::XMLPrinter::CStr() const
+  0.00     14.13     0.00        1     0.00     0.00  tinyxml2::XMLPrinter::CStrSize() const
+  0.00     14.13     0.00        1     0.00     0.00  tinyxml2::XMLDocument::ProcessEntities() const
+  0.00     14.13     0.00        1     0.00    25.53  tinyxml2::XMLDocument::Print(tinyxml2::XMLPrinter*) const
+  0.00     14.13     0.00        1     0.00    25.53  tinyxml2::XMLDocument::Accept(tinyxml2::XMLVisitor*) const
+  0.00     14.13     0.00        1     0.00     0.00  tinyxml2::XMLDocument::HasBOM() const
+  0.00     14.13     0.00        1     0.00     0.00  tinyxml2::XMLDeclaration::Accept(tinyxml2::XMLVisitor*) const
+  0.00     14.13     0.00        1     0.00     0.00  tinyxml2::DynArray<tinyxml2::MemPoolT<48>::Block*, 10>::Size() const
+  0.00     14.13     0.00        1     0.00     0.00  tinyxml2::DynArray<char, 20>::Mem() const
+  0.00     14.13     0.00        1     0.00     0.00  tinyxml2::DynArray<char, 20>::Size() const
+  0.00     14.13     0.00        1     0.00     0.00  std::operator|(std::_Ios_Openmode, std::_Ios_Openmode)
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+ 
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this 
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 4 byte(s) for 0.07% of 14.13 seconds
+
+index % time    self  children    called     name
+                0.00    0.00       1/26005       tinyxml2::XMLDocument::RootElement() [59]
+                0.00    0.00       4/26005       _fu1___ZSt4cout [50]
+                0.00    0.53    1000/26005       _fu5___ZSt4cout [9]
+                0.00   13.35   25000/26005       _fu3___ZSt4cout [3]
+[1]     98.3    0.00   13.89   26005         tinyxml2::XMLNode::FirstChildElement(char const*) [1]
+                5.15    8.74   26005/26005       tinyxml2::XMLNode::FirstChildElement(char const*) const [2]
+-----------------------------------------------
+                5.15    8.74   26005/26005       tinyxml2::XMLNode::FirstChildElement(char const*) [1]
+[2]     98.3    5.15    8.74   26005         tinyxml2::XMLNode::FirstChildElement(char const*) const [2]
+                4.59    0.00 323621329/323796339     tinyxml2::XMLUtil::StringEqual(char const*, char const*, int) [4]
+                0.85    2.66 323621329/323646330     tinyxml2::XMLElement::Name() const [5]
+                0.64    0.00 323621330/323621333     tinyxml2::XMLElement::ToElement() [8]
+                0.00    0.00       1/3           tinyxml2::XMLNode::ToElement() [128]
+-----------------------------------------------
+                                                 <spontaneous>
+[3]     94.5    0.00   13.36                 _fu3___ZSt4cout [3]
+                0.00   13.35   25000/26005       tinyxml2::XMLNode::FirstChildElement(char const*) [1]
+                0.00    0.00   25000/25001       tinyxml2::XMLElement::Attribute(char const*, char const*) const [66]
+                0.00    0.00   25000/25001       tinyxml2::XMLElement::IntAttribute(char const*) const [60]
+                0.00    0.00   25000/25001       tinyxml2::XMLElement::BoolAttribute(char const*) const [61]
+                0.00    0.00   25000/25001       tinyxml2::XMLElement::FloatAttribute(char const*) const [62]
+                0.00    0.00   25000/76000       tinyxml2::XMLUtil::ToStr(int, char*, int) [88]
+-----------------------------------------------
+                0.00    0.00       6/323796339     tinyxml2::XMLDocument::Identify(char*, tinyxml2::XMLNode**) [79]
+                0.00    0.00   75000/323796339     tinyxml2::XMLElement::FindOrCreateAttribute(char const*) [22]
+                0.00    0.00  100004/323796339     tinyxml2::XMLElement::FindAttribute(char const*) const [53]
+                4.59    0.00 323621329/323796339     tinyxml2::XMLNode::FirstChildElement(char const*) const [2]
+[4]     32.5    4.59    0.00 323796339         tinyxml2::XMLUtil::StringEqual(char const*, char const*, int) [4]
+-----------------------------------------------
+                0.00    0.00   25001/323646330     tinyxml2::XMLPrinter::VisitEnter(tinyxml2::XMLElement const&, tinyxml2::XMLAttribute const*) [16]
+                0.85    2.66 323621329/323646330     tinyxml2::XMLNode::FirstChildElement(char const*) const [2]
+[5]     24.9    0.85    2.66 323646330         tinyxml2::XMLElement::Name() const [5]
+                0.99    1.67 323646330/323646331     tinyxml2::XMLNode::Value() const [6]
+-----------------------------------------------
+                0.00    0.00       1/323646331     tinyxml2::XMLPrinter::Visit(tinyxml2::XMLDeclaration const&) [75]
+                0.99    1.67 323646330/323646331     tinyxml2::XMLElement::Name() const [5]
+[6]     18.9    0.99    1.67 323646331         tinyxml2::XMLNode::Value() const [6]
+                1.67    0.00 323646331/323875335     tinyxml2::StrPair::GetStr() [7]
+-----------------------------------------------
+                0.00    0.00   29000/323875335     tinyxml2::XMLAttribute::Value() const [67]
+                0.00    0.00  200004/323875335     tinyxml2::XMLAttribute::Name() const [57]
+                1.67    0.00 323646331/323875335     tinyxml2::XMLNode::Value() const [6]
+[7]     11.9    1.68    0.00 323875335         tinyxml2::StrPair::GetStr() [7]
+-----------------------------------------------
+                0.00    0.00       3/323621333     tinyxml2::XMLNode::ParseDeep(char*, tinyxml2::StrPair*) [74]
+                0.64    0.00 323621330/323621333     tinyxml2::XMLNode::FirstChildElement(char const*) const [2]
+[8]      4.5    0.64    0.00 323621333         tinyxml2::XMLElement::ToElement() [8]
+-----------------------------------------------
+                                                 <spontaneous>
+[9]      3.9    0.00    0.55                 _fu5___ZSt4cout [9]
+                0.00    0.53    1000/26005       tinyxml2::XMLNode::FirstChildElement(char const*) [1]
+                0.00    0.01    1000/1000        tinyxml2::XMLNode::DeleteChild(tinyxml2::XMLNode*) [33]
+                0.00    0.00    1000/76000       tinyxml2::XMLUtil::ToStr(int, char*, int) [88]
+-----------------------------------------------
+                                                 <spontaneous>
+[10]     0.5    0.01    0.06                 _fu0___ZSt4cout [10]
+                0.00    0.02   25000/25000       tinyxml2::XMLElement::SetAttribute(char const*, bool) [21]
+                0.00    0.01   25000/25000       tinyxml2::XMLDocument::NewElement(char const*) [28]
+                0.00    0.01   25000/25000       tinyxml2::XMLElement::SetAttribute(char const*, char const*) [40]
+                0.00    0.01   25000/25000       tinyxml2::XMLElement::SetAttribute(char const*, int) [42]
+                0.00    0.01   25000/25000       tinyxml2::XMLElement::SetAttribute(char const*, double) [41]
+                0.00    0.00   25000/76000       tinyxml2::XMLUtil::ToStr(int, char*, int) [88]
+                0.00    0.00   25000/25000       std::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*) [109]
+                0.00    0.00   25000/25002       tinyxml2::XMLNode::InsertEndChild(tinyxml2::XMLNode*) [92]
+-----------------------------------------------
+                0.00    0.00   25000/150000      tinyxml2::XMLNode::SetValue(char const*, bool) [30]
+                0.00    0.00   25000/150000      tinyxml2::XMLAttribute::SetName(char const*) [49]
+                0.00    0.00   25000/150000      tinyxml2::XMLAttribute::SetAttribute(char const*) [46]
+                0.00    0.00   25000/150000      tinyxml2::XMLAttribute::SetAttribute(int) [48]
+                0.00    0.00   25000/150000      tinyxml2::XMLAttribute::SetAttribute(bool) [29]
+                0.00    0.00   25000/150000      tinyxml2::XMLAttribute::SetAttribute(double) [47]
+[11]     0.2    0.02    0.00  150000         tinyxml2::StrPair::SetStr(char const*, int) [11]
+                0.00    0.00  150000/225007      tinyxml2::StrPair::Reset() [45]
+-----------------------------------------------
+                                                 <spontaneous>
+[12]     0.2    0.00    0.03                 _fu8___ZSt3cin [12]
+                0.00    0.03       1/1           tinyxml2::XMLDocument::Print(tinyxml2::XMLPrinter*) const [13]
+                0.00    0.00       1/25002       tinyxml2::XMLPrinter::OpenElement(char const*) [43]
+                0.00    0.00       1/25002       tinyxml2::XMLPrinter::CloseElement() [51]
+                0.00    0.00       1/1           tinyxml2::XMLPrinter::CStrSize() const [170]
+                0.00    0.00       1/1           tinyxml2::XMLPrinter::CStr() const [169]
+-----------------------------------------------
+                0.00    0.03       1/1           _fu8___ZSt3cin [12]
+[13]     0.2    0.00    0.03       1         tinyxml2::XMLDocument::Print(tinyxml2::XMLPrinter*) const [13]
+                0.00    0.03       1/1           tinyxml2::XMLDocument::Accept(tinyxml2::XMLVisitor*) const [14]
+                0.00    0.00       1/2           tinyxml2::XMLPrinter::XMLPrinter(_iobuf*, bool, int) [129]
+                0.00    0.00       1/2           tinyxml2::XMLPrinter::~XMLPrinter() [130]
+-----------------------------------------------
+                0.00    0.03       1/1           tinyxml2::XMLDocument::Print(tinyxml2::XMLPrinter*) const [13]
+[14]     0.2    0.00    0.03       1         tinyxml2::XMLDocument::Accept(tinyxml2::XMLVisitor*) const [14]
+                0.00    0.03       1/1           tinyxml2::XMLElement::Accept(tinyxml2::XMLVisitor*) const [15]
+                0.00    0.00       1/1           tinyxml2::XMLDeclaration::Accept(tinyxml2::XMLVisitor*) const [76]
+                0.00    0.00       2/25002       tinyxml2::XMLNode::NextSibling() const [98]
+                0.00    0.00       1/1           tinyxml2::XMLPrinter::VisitEnter(tinyxml2::XMLDocument const&) [141]
+                0.00    0.00       1/25002       tinyxml2::XMLNode::FirstChild() const [97]
+                0.00    0.00       1/1           tinyxml2::XMLPrinter::VisitExit(tinyxml2::XMLDocument const&) [142]
+-----------------------------------------------
+                               25000             tinyxml2::XMLElement::Accept(tinyxml2::XMLVisitor*) const [15]
+                0.00    0.03       1/1           tinyxml2::XMLDocument::Accept(tinyxml2::XMLVisitor*) const [14]
+[15]     0.2    0.00    0.03       1+25000   tinyxml2::XMLElement::Accept(tinyxml2::XMLVisitor*) const [15]
+                0.00    0.02   25001/25001       tinyxml2::XMLPrinter::VisitEnter(tinyxml2::XMLElement const&, tinyxml2::XMLAttribute const*) [16]
+                0.00    0.00   25001/25001       tinyxml2::XMLPrinter::VisitExit(tinyxml2::XMLElement const&) [52]
+                0.00    0.00   25001/25002       tinyxml2::XMLNode::FirstChild() const [97]
+                0.00    0.00   25000/25002       tinyxml2::XMLNode::NextSibling() const [98]
+                               25000             tinyxml2::XMLElement::Accept(tinyxml2::XMLVisitor*) const [15]
+-----------------------------------------------
+                0.00    0.02   25001/25001       tinyxml2::XMLElement::Accept(tinyxml2::XMLVisitor*) const [15]
+[16]     0.2    0.00    0.02   25001         tinyxml2::XMLPrinter::VisitEnter(tinyxml2::XMLElement const&, tinyxml2::XMLAttribute const*) [16]
+                0.00    0.02   25000/25000       tinyxml2::XMLPrinter::PushAttribute(char const*, char const*) [23]
+                0.00    0.00   25001/25002       tinyxml2::XMLPrinter::OpenElement(char const*) [43]
+                0.00    0.00   25001/323646330     tinyxml2::XMLElement::Name() const [5]
+                0.00    0.00   25000/29000       tinyxml2::XMLAttribute::Value() const [67]
+                0.00    0.00   25000/200004      tinyxml2::XMLAttribute::Name() const [57]
+                0.00    0.00   25000/25000       tinyxml2::XMLAttribute::Next() const [108]
+-----------------------------------------------
+                                                 <spontaneous>
+[17]     0.1    0.02    0.00                 __gdtoa [17]
+-----------------------------------------------
+                                                 <spontaneous>
+[18]     0.1    0.02    0.00                 __mingw_pformat [18]
+-----------------------------------------------
+                                                 <spontaneous>
+[19]     0.1    0.02    0.00                 __pformat_int [19]
+-----------------------------------------------
+                                                 <spontaneous>
+[20]     0.1    0.02    0.00                 __pformat_putc [20]
+-----------------------------------------------
+                0.00    0.02   25000/25000       _fu0___ZSt4cout [10]
+[21]     0.1    0.00    0.02   25000         tinyxml2::XMLElement::SetAttribute(char const*, bool) [21]
+                0.01    0.00   25000/25000       tinyxml2::XMLAttribute::SetAttribute(bool) [29]
+                0.00    0.00   25000/100000      tinyxml2::XMLElement::FindOrCreateAttribute(char const*) [22]
+-----------------------------------------------
+                0.00    0.00   25000/100000      tinyxml2::XMLElement::SetAttribute(char const*, char const*) [40]
+                0.00    0.00   25000/100000      tinyxml2::XMLElement::SetAttribute(char const*, bool) [21]
+                0.00    0.00   25000/100000      tinyxml2::XMLElement::SetAttribute(char const*, double) [41]
+                0.00    0.00   25000/100000      tinyxml2::XMLElement::SetAttribute(char const*, int) [42]
+[22]     0.1    0.00    0.02  100000         tinyxml2::XMLElement::FindOrCreateAttribute(char const*) [22]
+                0.01    0.00   25000/25000       tinyxml2::MemPoolT<36>::Alloc() [36]
+                0.00    0.00   25000/25000       tinyxml2::XMLAttribute::SetName(char const*) [49]
+                0.00    0.00   75000/323796339     tinyxml2::XMLUtil::StringEqual(char const*, char const*, int) [4]
+                0.00    0.00   75000/200004      tinyxml2::XMLAttribute::Name() const [57]
+                0.00    0.00   25000/50002       operator new(unsigned int, void*) [90]
+                0.00    0.00   25000/25000       tinyxml2::XMLAttribute::XMLAttribute() [103]
+                0.00    0.00   25000/25000       tinyxml2::MemPoolT<36>::SetTracked() [106]
+-----------------------------------------------
+                0.00    0.02   25000/25000       tinyxml2::XMLPrinter::VisitEnter(tinyxml2::XMLElement const&, tinyxml2::XMLAttribute const*) [16]
+[23]     0.1    0.00    0.02   25000         tinyxml2::XMLPrinter::PushAttribute(char const*, char const*) [23]
+                0.01    0.00   25000/25000       tinyxml2::XMLPrinter::PrintString(char const*, bool) [31]
+                0.00    0.00   50000/125007      tinyxml2::XMLPrinter::Print(char const*, ...) [34]
+-----------------------------------------------
+                                                 <spontaneous>
+[24]     0.1    0.00    0.02                 main [24]
+                0.00    0.02       1/1           tinyxml2::XMLDocument::Parse(char const*, unsigned int) [25]
+                0.00    0.00       1/1           tinyxml2::XMLDocument::RootElement() [59]
+                0.00    0.00       1/1           tinyxml2::XMLDocument::XMLDocument(bool, tinyxml2::Whitespace) [143]
+                0.00    0.00       1/2           tinyxml2::XMLPrinter::XMLPrinter(_iobuf*, bool, int) [129]
+                0.00    0.00       1/1           std::operator|(std::_Ios_Openmode, std::_Ios_Openmode) [176]
+-----------------------------------------------
+                0.00    0.02       1/1           main [24]
+[25]     0.1    0.00    0.02       1         tinyxml2::XMLDocument::Parse(char const*, unsigned int) [25]
+                0.01    0.00       1/1           tinyxml2::XMLUtil::ReadBOM(char const*, bool*) [26]
+                0.00    0.00       1/1           tinyxml2::XMLDocument::Clear() [70]
+                0.00    0.00       1/1           tinyxml2::XMLNode::ParseDeep(char*, tinyxml2::StrPair*) [74]
+                0.00    0.00       1/1           tinyxml2::XMLUtil::SkipWhiteSpace(char const*) [146]
+-----------------------------------------------
+                0.01    0.00       1/1           tinyxml2::XMLDocument::Parse(char const*, unsigned int) [25]
+[26]     0.1    0.01    0.00       1         tinyxml2::XMLUtil::ReadBOM(char const*, bool*) [26]
+-----------------------------------------------
+                0.00    0.01   25000/25000       tinyxml2::XMLDocument::NewElement(char const*) [28]
+[27]     0.1    0.00    0.01   25000         tinyxml2::XMLElement::SetName(char const*, bool) [27]
+                0.01    0.00   25000/25000       tinyxml2::XMLNode::SetValue(char const*, bool) [30]
+-----------------------------------------------
+                0.00    0.01   25000/25000       _fu0___ZSt4cout [10]
+[28]     0.1    0.00    0.01   25000         tinyxml2::XMLDocument::NewElement(char const*) [28]
+                0.00    0.01   25000/25000       tinyxml2::XMLElement::SetName(char const*, bool) [27]
+                0.00    0.00   25000/25001       tinyxml2::MemPoolT<52>::Alloc() [102]
+                0.00    0.00   25000/50002       operator new(unsigned int, void*) [90]
+                0.00    0.00   25000/25001       tinyxml2::XMLElement::XMLElement(tinyxml2::XMLDocument*) [99]
+-----------------------------------------------
+                0.01    0.00   25000/25000       tinyxml2::XMLElement::SetAttribute(char const*, bool) [21]
+[29]     0.1    0.01    0.00   25000         tinyxml2::XMLAttribute::SetAttribute(bool) [29]
+                0.00    0.00   25000/150000      tinyxml2::StrPair::SetStr(char const*, int) [11]
+                0.00    0.00   25000/25000       tinyxml2::XMLUtil::ToStr(bool, char*, int) [104]
+-----------------------------------------------
+                0.01    0.00   25000/25000       tinyxml2::XMLElement::SetName(char const*, bool) [27]
+[30]     0.1    0.01    0.00   25000         tinyxml2::XMLNode::SetValue(char const*, bool) [30]
+                0.00    0.00   25000/150000      tinyxml2::StrPair::SetStr(char const*, int) [11]
+-----------------------------------------------
+                0.01    0.00   25000/25000       tinyxml2::XMLPrinter::PushAttribute(char const*, char const*) [23]
+[31]     0.1    0.01    0.00   25000         tinyxml2::XMLPrinter::PrintString(char const*, bool) [31]
+                0.00    0.00   25000/125007      tinyxml2::XMLPrinter::Print(char const*, ...) [34]
+-----------------------------------------------
+[32]     0.1    0.01    0.00    1003+74007   <cycle 1 as a whole> [32]
+                0.01    0.00   25005             tinyxml2::XMLNode::DeleteChildren() <cycle 1> [35]
+                0.00    0.00   25001             tinyxml2::XMLElement::~XMLElement() <cycle 1> [55]
+                0.00    0.00   25003             tinyxml2::XMLNode::~XMLNode() <cycle 1> [58]
+                0.00    0.00       1             tinyxml2::XMLDeclaration::~XMLDeclaration() <cycle 1> [145]
+-----------------------------------------------
+                0.00    0.01    1000/1000        _fu5___ZSt4cout [9]
+[33]     0.1    0.00    0.01    1000         tinyxml2::XMLNode::DeleteChild(tinyxml2::XMLNode*) [33]
+                0.01    0.00    1000/1003        tinyxml2::XMLElement::~XMLElement() <cycle 1> [55]
+                0.00    0.00    1000/25001       tinyxml2::MemPoolT<52>::Free(void*) [101]
+-----------------------------------------------
+                0.00    0.00       1/125007      tinyxml2::XMLPrinter::PushDeclaration(char const*) [78]
+                0.00    0.00       2/125007      tinyxml2::XMLPrinter::SealElement() [77]
+                0.00    0.00   25000/125007      tinyxml2::XMLPrinter::PrintString(char const*, bool) [31]
+                0.00    0.00   25002/125007      tinyxml2::XMLPrinter::OpenElement(char const*) [43]
+                0.00    0.00   25002/125007      tinyxml2::XMLPrinter::CloseElement() [51]
+                0.00    0.00   50000/125007      tinyxml2::XMLPrinter::PushAttribute(char const*, char const*) [23]
+[34]     0.1    0.01    0.00  125007         tinyxml2::XMLPrinter::Print(char const*, ...) [34]
+                0.00    0.00  125007/125007      tinyxml2::DynArray<char, 20>::PushArr(int) [87]
+-----------------------------------------------
+                               25003             tinyxml2::XMLNode::~XMLNode() <cycle 1> [58]
+                0.00    0.00       1/1003        tinyxml2::XMLDocument::~XMLDocument() [68]
+                0.00    0.00       1/1003        tinyxml2::XMLDocument::Clear() [70]
+[35]     0.1    0.01    0.00   25005         tinyxml2::XMLNode::DeleteChildren() <cycle 1> [35]
+                0.00    0.00   24002/25002       tinyxml2::XMLNode::Unlink(tinyxml2::XMLNode*) [93]
+                0.00    0.00   24001/25001       tinyxml2::MemPoolT<52>::Free(void*) [101]
+                0.00    0.00       1/1           tinyxml2::MemPoolT<44>::Free(void*) [161]
+                               24001             tinyxml2::XMLElement::~XMLElement() <cycle 1> [55]
+                                   1             tinyxml2::XMLDeclaration::~XMLDeclaration() <cycle 1> [145]
+-----------------------------------------------
+                0.01    0.00   25000/25000       tinyxml2::XMLElement::FindOrCreateAttribute(char const*) [22]
+[36]     0.1    0.01    0.00   25000         tinyxml2::MemPoolT<36>::Alloc() [36]
+                0.00    0.00     222/222         tinyxml2::DynArray<tinyxml2::MemPoolT<36>::Block*, 10>::Push(tinyxml2::MemPoolT<36>::Block*) [119]
+-----------------------------------------------
+                                                 <spontaneous>
+[37]     0.1    0.01    0.00                 __chkstk_ms [37]
+-----------------------------------------------
+                                                 <spontaneous>
+[38]     0.1    0.01    0.00                 __freedtoa [38]
+-----------------------------------------------
+                                                 <spontaneous>
+[39]     0.1    0.01    0.00                 snprintf [39]
+-----------------------------------------------
+                0.00    0.01   25000/25000       _fu0___ZSt4cout [10]
+[40]     0.1    0.00    0.01   25000         tinyxml2::XMLElement::SetAttribute(char const*, char const*) [40]
+                0.00    0.00   25000/25000       tinyxml2::XMLAttribute::SetAttribute(char const*) [46]
+                0.00    0.00   25000/100000      tinyxml2::XMLElement::FindOrCreateAttribute(char const*) [22]
+-----------------------------------------------
+                0.00    0.01   25000/25000       _fu0___ZSt4cout [10]
+[41]     0.1    0.00    0.01   25000         tinyxml2::XMLElement::SetAttribute(char const*, double) [41]
+                0.00    0.00   25000/25000       tinyxml2::XMLAttribute::SetAttribute(double) [47]
+                0.00    0.00   25000/100000      tinyxml2::XMLElement::FindOrCreateAttribute(char const*) [22]
+-----------------------------------------------
+                0.00    0.01   25000/25000       _fu0___ZSt4cout [10]
+[42]     0.1    0.00    0.01   25000         tinyxml2::XMLElement::SetAttribute(char const*, int) [42]
+                0.00    0.00   25000/25000       tinyxml2::XMLAttribute::SetAttribute(int) [48]
+                0.00    0.00   25000/100000      tinyxml2::XMLElement::FindOrCreateAttribute(char const*) [22]
+-----------------------------------------------
+                0.00    0.00       1/25002       _fu8___ZSt3cin [12]
+                0.00    0.00   25001/25002       tinyxml2::XMLPrinter::VisitEnter(tinyxml2::XMLElement const&, tinyxml2::XMLAttribute const*) [16]
+[43]     0.0    0.01    0.00   25002         tinyxml2::XMLPrinter::OpenElement(char const*) [43]
+                0.00    0.00   25002/125007      tinyxml2::XMLPrinter::Print(char const*, ...) [34]
+                0.00    0.00       1/2           tinyxml2::XMLPrinter::SealElement() [77]
+                0.00    0.00   25002/25002       tinyxml2::DynArray<char const*, 10>::Push(char const*) [96]
+-----------------------------------------------
+                                                 <spontaneous>
+[44]     0.0    0.01    0.00                 tinyxml2::XMLPrinter::PushHeader(bool, bool) [44]
+-----------------------------------------------
+                0.00    0.00       2/225007      tinyxml2::StrPair::Set(char*, char*, int) [80]
+                0.00    0.00   75005/225007      tinyxml2::StrPair::~StrPair() [54]
+                0.00    0.00  150000/225007      tinyxml2::StrPair::SetStr(char const*, int) [11]
+[45]     0.0    0.00    0.00  225007         tinyxml2::StrPair::Reset() [45]
+-----------------------------------------------
+                0.00    0.00   25000/25000       tinyxml2::XMLElement::SetAttribute(char const*, char const*) [40]
+[46]     0.0    0.00    0.00   25000         tinyxml2::XMLAttribute::SetAttribute(char const*) [46]
+                0.00    0.00   25000/150000      tinyxml2::StrPair::SetStr(char const*, int) [11]
+-----------------------------------------------
+                0.00    0.00   25000/25000       tinyxml2::XMLElement::SetAttribute(char const*, double) [41]
+[47]     0.0    0.00    0.00   25000         tinyxml2::XMLAttribute::SetAttribute(double) [47]
+                0.00    0.00   25000/150000      tinyxml2::StrPair::SetStr(char const*, int) [11]
+                0.00    0.00   25000/25000       tinyxml2::XMLUtil::ToStr(double, char*, int) [105]
+-----------------------------------------------
+                0.00    0.00   25000/25000       tinyxml2::XMLElement::SetAttribute(char const*, int) [42]
+[48]     0.0    0.00    0.00   25000         tinyxml2::XMLAttribute::SetAttribute(int) [48]
+                0.00    0.00   25000/150000      tinyxml2::StrPair::SetStr(char const*, int) [11]
+                0.00    0.00   25000/76000       tinyxml2::XMLUtil::ToStr(int, char*, int) [88]
+-----------------------------------------------
+                0.00    0.00   25000/25000       tinyxml2::XMLElement::FindOrCreateAttribute(char const*) [22]
+[49]     0.0    0.00    0.00   25000         tinyxml2::XMLAttribute::SetName(char const*) [49]
+                0.00    0.00   25000/150000      tinyxml2::StrPair::SetStr(char const*, int) [11]
+-----------------------------------------------
+                                                 <spontaneous>
+[50]     0.0    0.00    0.00                 _fu1___ZSt4cout [50]
+                0.00    0.00       4/26005       tinyxml2::XMLNode::FirstChildElement(char const*) [1]
+                0.00    0.00       1/25001       tinyxml2::XMLElement::FloatAttribute(char const*) const [62]
+                0.00    0.00       1/25001       tinyxml2::XMLElement::BoolAttribute(char const*) const [61]
+                0.00    0.00       1/25001       tinyxml2::XMLElement::IntAttribute(char const*) const [60]
+                0.00    0.00       1/25001       tinyxml2::XMLElement::Attribute(char const*, char const*) const [66]
+-----------------------------------------------
+                0.00    0.00       1/25002       _fu8___ZSt3cin [12]
+                0.00    0.00   25001/25002       tinyxml2::XMLPrinter::VisitExit(tinyxml2::XMLElement const&) [52]
+[51]     0.0    0.00    0.00   25002         tinyxml2::XMLPrinter::CloseElement() [51]
+                0.00    0.00   25002/125007      tinyxml2::XMLPrinter::Print(char const*, ...) [34]
+                0.00    0.00   25002/25002       tinyxml2::DynArray<char const*, 10>::Pop() [95]
+-----------------------------------------------
+                0.00    0.00   25001/25001       tinyxml2::XMLElement::Accept(tinyxml2::XMLVisitor*) const [15]
+[52]     0.0    0.00    0.00   25001         tinyxml2::XMLPrinter::VisitExit(tinyxml2::XMLElement const&) [52]
+                0.00    0.00   25001/25002       tinyxml2::XMLPrinter::CloseElement() [51]
+-----------------------------------------------
+                0.00    0.00   25001/100004      tinyxml2::XMLElement::Attribute(char const*, char const*) const [66]
+                0.00    0.00   25001/100004      tinyxml2::XMLElement::QueryIntAttribute(char const*, int*) const [63]
+                0.00    0.00   25001/100004      tinyxml2::XMLElement::QueryBoolAttribute(char const*, bool*) const [64]
+                0.00    0.00   25001/100004      tinyxml2::XMLElement::QueryFloatAttribute(char const*, float*) const [65]
+[53]     0.0    0.00    0.00  100004         tinyxml2::XMLElement::FindAttribute(char const*) const [53]
+                0.00    0.00  100004/323796339     tinyxml2::XMLUtil::StringEqual(char const*, char const*, int) [4]
+                0.00    0.00  100004/200004      tinyxml2::XMLAttribute::Name() const [57]
+-----------------------------------------------
+                0.00    0.00       2/75005       tinyxml2::XMLNode::ParseDeep(char*, tinyxml2::StrPair*) [74]
+                0.00    0.00   25003/75005       tinyxml2::XMLNode::~XMLNode() <cycle 1> [58]
+                0.00    0.00   50000/75005       tinyxml2::XMLAttribute::~XMLAttribute() [56]
+[54]     0.0    0.00    0.00   75005         tinyxml2::StrPair::~StrPair() [54]
+                0.00    0.00   75005/225007      tinyxml2::StrPair::Reset() [45]
+-----------------------------------------------
+                               24001             tinyxml2::XMLNode::DeleteChildren() <cycle 1> [35]
+                0.01    0.00    1000/1003        tinyxml2::XMLNode::DeleteChild(tinyxml2::XMLNode*) [33]
+[55]     0.0    0.00    0.00   25001         tinyxml2::XMLElement::~XMLElement() <cycle 1> [55]
+                0.00    0.00   25000/25000       tinyxml2::XMLAttribute::~XMLAttribute() [56]
+                0.00    0.00   25000/25000       tinyxml2::MemPoolT<36>::Free(void*) [107]
+                               25001             tinyxml2::XMLNode::~XMLNode() <cycle 1> [58]
+-----------------------------------------------
+                0.00    0.00   25000/25000       tinyxml2::XMLElement::~XMLElement() <cycle 1> [55]
+[56]     0.0    0.00    0.00   25000         tinyxml2::XMLAttribute::~XMLAttribute() [56]
+                0.00    0.00   50000/75005       tinyxml2::StrPair::~StrPair() [54]
+-----------------------------------------------
+                0.00    0.00   25000/200004      tinyxml2::XMLPrinter::VisitEnter(tinyxml2::XMLElement const&, tinyxml2::XMLAttribute const*) [16]
+                0.00    0.00   75000/200004      tinyxml2::XMLElement::FindOrCreateAttribute(char const*) [22]
+                0.00    0.00  100004/200004      tinyxml2::XMLElement::FindAttribute(char const*) const [53]
+[57]     0.0    0.00    0.00  200004         tinyxml2::XMLAttribute::Name() const [57]
+                0.00    0.00  200004/323875335     tinyxml2::StrPair::GetStr() [7]
+-----------------------------------------------
+                                   1             tinyxml2::XMLDeclaration::~XMLDeclaration() <cycle 1> [145]
+                               25001             tinyxml2::XMLElement::~XMLElement() <cycle 1> [55]
+                0.00    0.00       1/1003        tinyxml2::XMLDocument::~XMLDocument() [68]
+[58]     0.0    0.00    0.00   25003         tinyxml2::XMLNode::~XMLNode() <cycle 1> [58]
+                0.00    0.00   25003/75005       tinyxml2::StrPair::~StrPair() [54]
+                0.00    0.00    1000/25002       tinyxml2::XMLNode::Unlink(tinyxml2::XMLNode*) [93]
+                               25003             tinyxml2::XMLNode::DeleteChildren() <cycle 1> [35]
+-----------------------------------------------
+                0.00    0.00       1/1           main [24]
+[59]     0.0    0.00    0.00       1         tinyxml2::XMLDocument::RootElement() [59]
+                0.00    0.00       1/26005       tinyxml2::XMLNode::FirstChildElement(char const*) [1]
+-----------------------------------------------
+                0.00    0.00       1/25001       _fu1___ZSt4cout [50]
+                0.00    0.00   25000/25001       _fu3___ZSt4cout [3]
+[60]     0.0    0.00    0.00   25001         tinyxml2::XMLElement::IntAttribute(char const*) const [60]
+                0.00    0.00   25001/25001       tinyxml2::XMLElement::QueryIntAttribute(char const*, int*) const [63]
+-----------------------------------------------
+                0.00    0.00       1/25001       _fu1___ZSt4cout [50]
+                0.00    0.00   25000/25001       _fu3___ZSt4cout [3]
+[61]     0.0    0.00    0.00   25001         tinyxml2::XMLElement::BoolAttribute(char const*) const [61]
+                0.00    0.00   25001/25001       tinyxml2::XMLElement::QueryBoolAttribute(char const*, bool*) const [64]
+-----------------------------------------------
+                0.00    0.00       1/25001       _fu1___ZSt4cout [50]
+                0.00    0.00   25000/25001       _fu3___ZSt4cout [3]
+[62]     0.0    0.00    0.00   25001         tinyxml2::XMLElement::FloatAttribute(char const*) const [62]
+                0.00    0.00   25001/25001       tinyxml2::XMLElement::QueryFloatAttribute(char const*, float*) const [65]
+-----------------------------------------------
+                0.00    0.00   25001/25001       tinyxml2::XMLElement::IntAttribute(char const*) const [60]
+[63]     0.0    0.00    0.00   25001         tinyxml2::XMLElement::QueryIntAttribute(char const*, int*) const [63]
+                0.00    0.00   25001/100004      tinyxml2::XMLElement::FindAttribute(char const*) const [53]
+                0.00    0.00    1000/1000        tinyxml2::XMLAttribute::QueryIntValue(int*) const [71]
+-----------------------------------------------
+                0.00    0.00   25001/25001       tinyxml2::XMLElement::BoolAttribute(char const*) const [61]
+[64]     0.0    0.00    0.00   25001         tinyxml2::XMLElement::QueryBoolAttribute(char const*, bool*) const [64]
+                0.00    0.00   25001/100004      tinyxml2::XMLElement::FindAttribute(char const*) const [53]
+                0.00    0.00    1000/1000        tinyxml2::XMLAttribute::QueryBoolValue(bool*) const [72]
+-----------------------------------------------
+                0.00    0.00   25001/25001       tinyxml2::XMLElement::FloatAttribute(char const*) const [62]
+[65]     0.0    0.00    0.00   25001         tinyxml2::XMLElement::QueryFloatAttribute(char const*, float*) const [65]
+                0.00    0.00   25001/100004      tinyxml2::XMLElement::FindAttribute(char const*) const [53]
+                0.00    0.00    1000/1000        tinyxml2::XMLAttribute::QueryFloatValue(float*) const [73]
+-----------------------------------------------
+                0.00    0.00       1/25001       _fu1___ZSt4cout [50]
+                0.00    0.00   25000/25001       _fu3___ZSt4cout [3]
+[66]     0.0    0.00    0.00   25001         tinyxml2::XMLElement::Attribute(char const*, char const*) const [66]
+                0.00    0.00   25001/100004      tinyxml2::XMLElement::FindAttribute(char const*) const [53]
+                0.00    0.00    1000/29000       tinyxml2::XMLAttribute::Value() const [67]
+-----------------------------------------------
+                0.00    0.00    1000/29000       tinyxml2::XMLAttribute::QueryIntValue(int*) const [71]
+                0.00    0.00    1000/29000       tinyxml2::XMLAttribute::QueryBoolValue(bool*) const [72]
+                0.00    0.00    1000/29000       tinyxml2::XMLAttribute::QueryFloatValue(float*) const [73]
+                0.00    0.00    1000/29000       tinyxml2::XMLElement::Attribute(char const*, char const*) const [66]
+                0.00    0.00   25000/29000       tinyxml2::XMLPrinter::VisitEnter(tinyxml2::XMLElement const&, tinyxml2::XMLAttribute const*) [16]
+[67]     0.0    0.00    0.00   29000         tinyxml2::XMLAttribute::Value() const [67]
+                0.00    0.00   29000/323875335     tinyxml2::StrPair::GetStr() [7]
+-----------------------------------------------
+                0.00    0.00       1/1           _fu9___ZSt3cin [69]
+[68]     0.0    0.00    0.00       1         tinyxml2::XMLDocument::~XMLDocument() [68]
+                0.00    0.00       1/1003        tinyxml2::XMLNode::DeleteChildren() <cycle 1> [35]
+                0.00    0.00       1/1003        tinyxml2::XMLNode::~XMLNode() <cycle 1> [58]
+                0.00    0.00       1/1           tinyxml2::MemPoolT<44>::~MemPoolT() [164]
+                0.00    0.00       1/1           tinyxml2::MemPoolT<48>::~MemPoolT() [166]
+                0.00    0.00       1/1           tinyxml2::MemPoolT<36>::~MemPoolT() [159]
+                0.00    0.00       1/1           tinyxml2::MemPoolT<52>::~MemPoolT() [168]
+-----------------------------------------------
+                                                 <spontaneous>
+[69]     0.0    0.00    0.00                 _fu9___ZSt3cin [69]
+                0.00    0.00       1/1           tinyxml2::XMLDocument::~XMLDocument() [68]
+                0.00    0.00       1/2           tinyxml2::XMLPrinter::~XMLPrinter() [130]
+-----------------------------------------------
+                0.00    0.00       1/1           tinyxml2::XMLDocument::Parse(char const*, unsigned int) [25]
+[70]     0.0    0.00    0.00       1         tinyxml2::XMLDocument::Clear() [70]
+                0.00    0.00       1/1003        tinyxml2::XMLNode::DeleteChildren() <cycle 1> [35]
+-----------------------------------------------
+                0.00    0.00    1000/1000        tinyxml2::XMLElement::QueryIntAttribute(char const*, int*) const [63]
+[71]     0.0    0.00    0.00    1000         tinyxml2::XMLAttribute::QueryIntValue(int*) const [71]
+                0.00    0.00    1000/29000       tinyxml2::XMLAttribute::Value() const [67]
+                0.00    0.00    1000/2000        tinyxml2::XMLUtil::ToInt(char const*, int*) [110]
+-----------------------------------------------
+                0.00    0.00    1000/1000        tinyxml2::XMLElement::QueryBoolAttribute(char const*, bool*) const [64]
+[72]     0.0    0.00    0.00    1000         tinyxml2::XMLAttribute::QueryBoolValue(bool*) const [72]
+                0.00    0.00    1000/29000       tinyxml2::XMLAttribute::Value() const [67]
+                0.00    0.00    1000/1000        tinyxml2::XMLUtil::ToBool(char const*, bool*) [111]
+-----------------------------------------------
+                0.00    0.00    1000/1000        tinyxml2::XMLElement::QueryFloatAttribute(char const*, float*) const [65]
+[73]     0.0    0.00    0.00    1000         tinyxml2::XMLAttribute::QueryFloatValue(float*) const [73]
+                0.00    0.00    1000/29000       tinyxml2::XMLAttribute::Value() const [67]
+                0.00    0.00    1000/1000        tinyxml2::XMLUtil::ToFloat(char const*, float*) [112]
+-----------------------------------------------
+                0.00    0.00       1/1           tinyxml2::XMLDocument::Parse(char const*, unsigned int) [25]
+[74]     0.0    0.00    0.00       1         tinyxml2::XMLNode::ParseDeep(char*, tinyxml2::StrPair*) [74]
+                0.00    0.00       2/2           tinyxml2::XMLDocument::Identify(char*, tinyxml2::XMLNode**) [79]
+                0.00    0.00       2/75005       tinyxml2::StrPair::~StrPair() [54]
+                0.00    0.00       1/1           tinyxml2::XMLElement::ParseDeep(char*, tinyxml2::StrPair*) [81]
+                0.00    0.00       1/1           tinyxml2::XMLDeclaration::ParseDeep(char*, tinyxml2::StrPair*) [82]
+                0.00    0.00       3/323621333     tinyxml2::XMLElement::ToElement() [8]
+                0.00    0.00       3/4           tinyxml2::StrPair::Empty() const [127]
+                0.00    0.00       2/75005       tinyxml2::StrPair::StrPair() [89]
+                0.00    0.00       2/3           tinyxml2::XMLNode::ToElement() [128]
+                0.00    0.00       2/2           tinyxml2::XMLElement::ClosingType() const [138]
+                0.00    0.00       2/25002       tinyxml2::XMLNode::InsertEndChild(tinyxml2::XMLNode*) [92]
+-----------------------------------------------
+                0.00    0.00       1/1           tinyxml2::XMLDeclaration::Accept(tinyxml2::XMLVisitor*) const [76]
+[75]     0.0    0.00    0.00       1         tinyxml2::XMLPrinter::Visit(tinyxml2::XMLDeclaration const&) [75]
+                0.00    0.00       1/1           tinyxml2::XMLPrinter::PushDeclaration(char const*) [78]
+                0.00    0.00       1/323646331     tinyxml2::XMLNode::Value() const [6]
+-----------------------------------------------
+                0.00    0.00       1/1           tinyxml2::XMLDocument::Accept(tinyxml2::XMLVisitor*) const [14]
+[76]     0.0    0.00    0.00       1         tinyxml2::XMLDeclaration::Accept(tinyxml2::XMLVisitor*) const [76]
+                0.00    0.00       1/1           tinyxml2::XMLPrinter::Visit(tinyxml2::XMLDeclaration const&) [75]
+-----------------------------------------------
+                0.00    0.00       1/2           tinyxml2::XMLPrinter::OpenElement(char const*) [43]
+                0.00    0.00       1/2           tinyxml2::XMLPrinter::PushDeclaration(char const*) [78]
+[77]     0.0    0.00    0.00       2         tinyxml2::XMLPrinter::SealElement() [77]
+                0.00    0.00       2/125007      tinyxml2::XMLPrinter::Print(char const*, ...) [34]
+-----------------------------------------------
+                0.00    0.00       1/1           tinyxml2::XMLPrinter::Visit(tinyxml2::XMLDeclaration const&) [75]
+[78]     0.0    0.00    0.00       1         tinyxml2::XMLPrinter::PushDeclaration(char const*) [78]
+                0.00    0.00       1/2           tinyxml2::XMLPrinter::SealElement() [77]
+                0.00    0.00       1/125007      tinyxml2::XMLPrinter::Print(char const*, ...) [34]
+-----------------------------------------------
+                0.00    0.00       2/2           tinyxml2::XMLNode::ParseDeep(char*, tinyxml2::StrPair*) [74]
+[79]     0.0    0.00    0.00       2         tinyxml2::XMLDocument::Identify(char*, tinyxml2::XMLNode**) [79]
+                0.00    0.00       6/323796339     tinyxml2::XMLUtil::StringEqual(char const*, char const*, int) [4]
+                0.00    0.00       2/4           tinyxml2::XMLUtil::SkipWhiteSpace(char*) [126]
+                0.00    0.00       2/50002       operator new(unsigned int, void*) [90]
+                0.00    0.00       1/1           tinyxml2::MemPoolT<44>::Alloc() [162]
+                0.00    0.00       1/1           tinyxml2::XMLDeclaration::XMLDeclaration(tinyxml2::XMLDocument*) [144]
+                0.00    0.00       1/25001       tinyxml2::MemPoolT<52>::Alloc() [102]
+                0.00    0.00       1/25001       tinyxml2::XMLElement::XMLElement(tinyxml2::XMLDocument*) [99]
+-----------------------------------------------
+                0.00    0.00       1/2           tinyxml2::StrPair::ParseText(char*, char const*, int) [84]
+                0.00    0.00       1/2           tinyxml2::StrPair::ParseName(char*) [83]
+[80]     0.0    0.00    0.00       2         tinyxml2::StrPair::Set(char*, char*, int) [80]
+                0.00    0.00       2/225007      tinyxml2::StrPair::Reset() [45]
+-----------------------------------------------
+                0.00    0.00       1/1           tinyxml2::XMLNode::ParseDeep(char*, tinyxml2::StrPair*) [74]
+[81]     0.0    0.00    0.00       1         tinyxml2::XMLElement::ParseDeep(char*, tinyxml2::StrPair*) [81]
+                0.00    0.00       1/1           tinyxml2::StrPair::ParseName(char*) [83]
+                0.00    0.00       1/4           tinyxml2::XMLUtil::SkipWhiteSpace(char*) [126]
+                0.00    0.00       1/4           tinyxml2::StrPair::Empty() const [127]
+                0.00    0.00       1/1           tinyxml2::XMLElement::ParseAttributes(char*) [140]
+-----------------------------------------------
+                0.00    0.00       1/1           tinyxml2::XMLNode::ParseDeep(char*, tinyxml2::StrPair*) [74]
+[82]     0.0    0.00    0.00       1         tinyxml2::XMLDeclaration::ParseDeep(char*, tinyxml2::StrPair*) [82]
+                0.00    0.00       1/1           tinyxml2::StrPair::ParseText(char*, char const*, int) [84]
+-----------------------------------------------
+                0.00    0.00       1/1           tinyxml2::XMLElement::ParseDeep(char*, tinyxml2::StrPair*) [81]
+[83]     0.0    0.00    0.00       1         tinyxml2::StrPair::ParseName(char*) [83]
+                0.00    0.00       1/2           tinyxml2::StrPair::Set(char*, char*, int) [80]
+                0.00    0.00       4/4           tinyxml2::XMLUtil::IsNameChar(unsigned char) [125]
+                0.00    0.00       1/6           tinyxml2::XMLUtil::IsNameStartChar(unsigned char) [121]
+-----------------------------------------------
+                0.00    0.00       1/1           tinyxml2::XMLDeclaration::ParseDeep(char*, tinyxml2::StrPair*) [82]
+[84]     0.0    0.00    0.00       1         tinyxml2::StrPair::ParseText(char*, char const*, int) [84]
+                0.00    0.00       1/2           tinyxml2::StrPair::Set(char*, char*, int) [80]
+-----------------------------------------------
+                0.00    0.00       2/125009      tinyxml2::DynArray<char, 20>::Push(char) [135]
+                0.00    0.00  125007/125009      tinyxml2::DynArray<char, 20>::PushArr(int) [87]
+[86]     0.0    0.00    0.00  125009         tinyxml2::DynArray<char, 20>::EnsureCapacity(int) [86]
+-----------------------------------------------
+                0.00    0.00  125007/125007      tinyxml2::XMLPrinter::Print(char const*, ...) [34]
+[87]     0.0    0.00    0.00  125007         tinyxml2::DynArray<char, 20>::PushArr(int) [87]
+                0.00    0.00  125007/125009      tinyxml2::DynArray<char, 20>::EnsureCapacity(int) [86]
+-----------------------------------------------
+                0.00    0.00    1000/76000       _fu5___ZSt4cout [9]
+                0.00    0.00   25000/76000       _fu0___ZSt4cout [10]
+                0.00    0.00   25000/76000       _fu3___ZSt4cout [3]
+                0.00    0.00   25000/76000       tinyxml2::XMLAttribute::SetAttribute(int) [48]
+[88]     0.0    0.00    0.00   76000         tinyxml2::XMLUtil::ToStr(int, char*, int) [88]
+-----------------------------------------------
+                0.00    0.00       2/75005       tinyxml2::XMLNode::ParseDeep(char*, tinyxml2::StrPair*) [74]
+                0.00    0.00   25003/75005       tinyxml2::XMLNode::XMLNode(tinyxml2::XMLDocument*) [91]
+                0.00    0.00   50000/75005       tinyxml2::XMLAttribute::XMLAttribute() [103]
+[89]     0.0    0.00    0.00   75005         tinyxml2::StrPair::StrPair() [89]
+-----------------------------------------------
+                0.00    0.00       2/50002       tinyxml2::XMLDocument::Identify(char*, tinyxml2::XMLNode**) [79]
+                0.00    0.00   25000/50002       tinyxml2::XMLElement::FindOrCreateAttribute(char const*) [22]
+                0.00    0.00   25000/50002       tinyxml2::XMLDocument::NewElement(char const*) [28]
+[90]     0.0    0.00    0.00   50002         operator new(unsigned int, void*) [90]
+-----------------------------------------------
+                0.00    0.00       1/25003       tinyxml2::XMLDeclaration::XMLDeclaration(tinyxml2::XMLDocument*) [144]
+                0.00    0.00       1/25003       tinyxml2::XMLDocument::XMLDocument(bool, tinyxml2::Whitespace) [143]
+                0.00    0.00   25001/25003       tinyxml2::XMLElement::XMLElement(tinyxml2::XMLDocument*) [99]
+[91]     0.0    0.00    0.00   25003         tinyxml2::XMLNode::XMLNode(tinyxml2::XMLDocument*) [91]
+                0.00    0.00   25003/75005       tinyxml2::StrPair::StrPair() [89]
+-----------------------------------------------
+                0.00    0.00       2/25002       tinyxml2::XMLNode::ParseDeep(char*, tinyxml2::StrPair*) [74]
+                0.00    0.00   25000/25002       _fu0___ZSt4cout [10]
+[92]     0.0    0.00    0.00   25002         tinyxml2::XMLNode::InsertEndChild(tinyxml2::XMLNode*) [92]
+                0.00    0.00   25001/25001       tinyxml2::MemPoolT<52>::SetTracked() [100]
+                0.00    0.00       1/1           tinyxml2::MemPoolT<44>::SetTracked() [160]
+-----------------------------------------------
+                0.00    0.00    1000/25002       tinyxml2::XMLNode::~XMLNode() <cycle 1> [58]
+                0.00    0.00   24002/25002       tinyxml2::XMLNode::DeleteChildren() <cycle 1> [35]
+[93]     0.0    0.00    0.00   25002         tinyxml2::XMLNode::Unlink(tinyxml2::XMLNode*) [93]
+-----------------------------------------------
+                0.00    0.00   25002/25002       tinyxml2::DynArray<char const*, 10>::Push(char const*) [96]
+[94]     0.0    0.00    0.00   25002         tinyxml2::DynArray<char const*, 10>::EnsureCapacity(int) [94]
+-----------------------------------------------
+                0.00    0.00   25002/25002       tinyxml2::XMLPrinter::CloseElement() [51]
+[95]     0.0    0.00    0.00   25002         tinyxml2::DynArray<char const*, 10>::Pop() [95]
+-----------------------------------------------
+                0.00    0.00   25002/25002       tinyxml2::XMLPrinter::OpenElement(char const*) [43]
+[96]     0.0    0.00    0.00   25002         tinyxml2::DynArray<char const*, 10>::Push(char const*) [96]
+                0.00    0.00   25002/25002       tinyxml2::DynArray<char const*, 10>::EnsureCapacity(int) [94]
+-----------------------------------------------
+                0.00    0.00       1/25002       tinyxml2::XMLDocument::Accept(tinyxml2::XMLVisitor*) const [14]
+                0.00    0.00   25001/25002       tinyxml2::XMLElement::Accept(tinyxml2::XMLVisitor*) const [15]
+[97]     0.0    0.00    0.00   25002         tinyxml2::XMLNode::FirstChild() const [97]
+-----------------------------------------------
+                0.00    0.00       2/25002       tinyxml2::XMLDocument::Accept(tinyxml2::XMLVisitor*) const [14]
+                0.00    0.00   25000/25002       tinyxml2::XMLElement::Accept(tinyxml2::XMLVisitor*) const [15]
+[98]     0.0    0.00    0.00   25002         tinyxml2::XMLNode::NextSibling() const [98]
+-----------------------------------------------
+                0.00    0.00       1/25001       tinyxml2::XMLDocument::Identify(char*, tinyxml2::XMLNode**) [79]
+                0.00    0.00   25000/25001       tinyxml2::XMLDocument::NewElement(char const*) [28]
+[99]     0.0    0.00    0.00   25001         tinyxml2::XMLElement::XMLElement(tinyxml2::XMLDocument*) [99]
+                0.00    0.00   25001/25003       tinyxml2::XMLNode::XMLNode(tinyxml2::XMLDocument*) [91]
+-----------------------------------------------
+                0.00    0.00   25001/25001       tinyxml2::XMLNode::InsertEndChild(tinyxml2::XMLNode*) [92]
+[100]    0.0    0.00    0.00   25001         tinyxml2::MemPoolT<52>::SetTracked() [100]
+-----------------------------------------------
+                0.00    0.00    1000/25001       tinyxml2::XMLNode::DeleteChild(tinyxml2::XMLNode*) [33]
+                0.00    0.00   24001/25001       tinyxml2::XMLNode::DeleteChildren() <cycle 1> [35]
+[101]    0.0    0.00    0.00   25001         tinyxml2::MemPoolT<52>::Free(void*) [101]
+-----------------------------------------------
+                0.00    0.00       1/25001       tinyxml2::XMLDocument::Identify(char*, tinyxml2::XMLNode**) [79]
+                0.00    0.00   25000/25001       tinyxml2::XMLDocument::NewElement(char const*) [28]
+[102]    0.0    0.00    0.00   25001         tinyxml2::MemPoolT<52>::Alloc() [102]
+                0.00    0.00     321/321         tinyxml2::DynArray<tinyxml2::MemPoolT<52>::Block*, 10>::Push(tinyxml2::MemPoolT<52>::Block*) [115]
+-----------------------------------------------
+                0.00    0.00   25000/25000       tinyxml2::XMLElement::FindOrCreateAttribute(char const*) [22]
+[103]    0.0    0.00    0.00   25000         tinyxml2::XMLAttribute::XMLAttribute() [103]
+                0.00    0.00   50000/75005       tinyxml2::StrPair::StrPair() [89]
+-----------------------------------------------
+                0.00    0.00   25000/25000       tinyxml2::XMLAttribute::SetAttribute(bool) [29]
+[104]    0.0    0.00    0.00   25000         tinyxml2::XMLUtil::ToStr(bool, char*, int) [104]
+-----------------------------------------------
+                0.00    0.00   25000/25000       tinyxml2::XMLAttribute::SetAttribute(double) [47]
+[105]    0.0    0.00    0.00   25000         tinyxml2::XMLUtil::ToStr(double, char*, int) [105]
+-----------------------------------------------
+                0.00    0.00   25000/25000       tinyxml2::XMLElement::FindOrCreateAttribute(char const*) [22]
+[106]    0.0    0.00    0.00   25000         tinyxml2::MemPoolT<36>::SetTracked() [106]
+-----------------------------------------------
+                0.00    0.00   25000/25000       tinyxml2::XMLElement::~XMLElement() <cycle 1> [55]
+[107]    0.0    0.00    0.00   25000         tinyxml2::MemPoolT<36>::Free(void*) [107]
+-----------------------------------------------
+                0.00    0.00   25000/25000       tinyxml2::XMLPrinter::VisitEnter(tinyxml2::XMLElement const&, tinyxml2::XMLAttribute const*) [16]
+[108]    0.0    0.00    0.00   25000         tinyxml2::XMLAttribute::Next() const [108]
+-----------------------------------------------
+                0.00    0.00   25000/25000       _fu0___ZSt4cout [10]
+[109]    0.0    0.00    0.00   25000         std::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*) [109]
+-----------------------------------------------
+                0.00    0.00    1000/2000        tinyxml2::XMLUtil::ToBool(char const*, bool*) [111]
+                0.00    0.00    1000/2000        tinyxml2::XMLAttribute::QueryIntValue(int*) const [71]
+[110]    0.0    0.00    0.00    2000         tinyxml2::XMLUtil::ToInt(char const*, int*) [110]
+-----------------------------------------------
+                0.00    0.00    1000/1000        tinyxml2::XMLAttribute::QueryBoolValue(bool*) const [72]
+[111]    0.0    0.00    0.00    1000         tinyxml2::XMLUtil::ToBool(char const*, bool*) [111]
+                0.00    0.00    1000/2000        tinyxml2::XMLUtil::ToInt(char const*, int*) [110]
+-----------------------------------------------
+                0.00    0.00    1000/1000        tinyxml2::XMLAttribute::QueryFloatValue(float*) const [73]
+[112]    0.0    0.00    0.00    1000         tinyxml2::XMLUtil::ToFloat(char const*, float*) [112]
+-----------------------------------------------
+                0.00    0.00     322/322         tinyxml2::MemPoolT<52>::~MemPoolT() [168]
+[113]    0.0    0.00    0.00     322         tinyxml2::DynArray<tinyxml2::MemPoolT<52>::Block*, 10>::Size() const [113]
+-----------------------------------------------
+                0.00    0.00     321/321         tinyxml2::DynArray<tinyxml2::MemPoolT<52>::Block*, 10>::Push(tinyxml2::MemPoolT<52>::Block*) [115]
+[114]    0.0    0.00    0.00     321         tinyxml2::DynArray<tinyxml2::MemPoolT<52>::Block*, 10>::EnsureCapacity(int) [114]
+-----------------------------------------------
+                0.00    0.00     321/321         tinyxml2::MemPoolT<52>::Alloc() [102]
+[115]    0.0    0.00    0.00     321         tinyxml2::DynArray<tinyxml2::MemPoolT<52>::Block*, 10>::Push(tinyxml2::MemPoolT<52>::Block*) [115]
+                0.00    0.00     321/321         tinyxml2::DynArray<tinyxml2::MemPoolT<52>::Block*, 10>::EnsureCapacity(int) [114]
+-----------------------------------------------
+                0.00    0.00     321/321         tinyxml2::MemPoolT<52>::~MemPoolT() [168]
+[116]    0.0    0.00    0.00     321         tinyxml2::DynArray<tinyxml2::MemPoolT<52>::Block*, 10>::operator[](int) [116]
+-----------------------------------------------
+                0.00    0.00     223/223         tinyxml2::MemPoolT<36>::~MemPoolT() [159]
+[117]    0.0    0.00    0.00     223         tinyxml2::DynArray<tinyxml2::MemPoolT<36>::Block*, 10>::Size() const [117]
+-----------------------------------------------
+                0.00    0.00     222/222         tinyxml2::DynArray<tinyxml2::MemPoolT<36>::Block*, 10>::Push(tinyxml2::MemPoolT<36>::Block*) [119]
+[118]    0.0    0.00    0.00     222         tinyxml2::DynArray<tinyxml2::MemPoolT<36>::Block*, 10>::EnsureCapacity(int) [118]
+-----------------------------------------------
+                0.00    0.00     222/222         tinyxml2::MemPoolT<36>::Alloc() [36]
+[119]    0.0    0.00    0.00     222         tinyxml2::DynArray<tinyxml2::MemPoolT<36>::Block*, 10>::Push(tinyxml2::MemPoolT<36>::Block*) [119]
+                0.00    0.00     222/222         tinyxml2::DynArray<tinyxml2::MemPoolT<36>::Block*, 10>::EnsureCapacity(int) [118]
+-----------------------------------------------
+                0.00    0.00     222/222         tinyxml2::MemPoolT<36>::~MemPoolT() [159]
+[120]    0.0    0.00    0.00     222         tinyxml2::DynArray<tinyxml2::MemPoolT<36>::Block*, 10>::operator[](int) [120]
+-----------------------------------------------
+                0.00    0.00       1/6           tinyxml2::StrPair::ParseName(char*) [83]
+                0.00    0.00       1/6           tinyxml2::XMLElement::ParseAttributes(char*) [140]
+                0.00    0.00       4/6           tinyxml2::XMLUtil::IsNameChar(unsigned char) [125]
+[121]    0.0    0.00    0.00       6         tinyxml2::XMLUtil::IsNameStartChar(unsigned char) [121]
+-----------------------------------------------
+                0.00    0.00       1/5           tinyxml2::XMLUtil::SkipWhiteSpace(char const*) [146]
+                0.00    0.00       4/5           tinyxml2::XMLUtil::SkipWhiteSpace(char*) [126]
+[122]    0.0    0.00    0.00       5         tinyxml2::XMLUtil::IsUTF8Continuation(char) [122]
+-----------------------------------------------
+                0.00    0.00       1/4           tinyxml2::MemPoolT<36>::MemPoolT() [158]
+                0.00    0.00       1/4           tinyxml2::MemPoolT<44>::MemPoolT() [163]
+                0.00    0.00       1/4           tinyxml2::MemPoolT<48>::MemPoolT() [165]
+                0.00    0.00       1/4           tinyxml2::MemPoolT<52>::MemPoolT() [167]
+[123]    0.0    0.00    0.00       4         tinyxml2::MemPool::MemPool() [123]
+-----------------------------------------------
+                0.00    0.00       1/4           tinyxml2::MemPoolT<36>::~MemPoolT() [159]
+                0.00    0.00       1/4           tinyxml2::MemPoolT<44>::~MemPoolT() [164]
+                0.00    0.00       1/4           tinyxml2::MemPoolT<48>::~MemPoolT() [166]
+                0.00    0.00       1/4           tinyxml2::MemPoolT<52>::~MemPoolT() [168]
+[124]    0.0    0.00    0.00       4         tinyxml2::MemPool::~MemPool() [124]
+-----------------------------------------------
+                0.00    0.00       4/4           tinyxml2::StrPair::ParseName(char*) [83]
+[125]    0.0    0.00    0.00       4         tinyxml2::XMLUtil::IsNameChar(unsigned char) [125]
+                0.00    0.00       4/6           tinyxml2::XMLUtil::IsNameStartChar(unsigned char) [121]
+-----------------------------------------------
+                0.00    0.00       1/4           tinyxml2::XMLElement::ParseAttributes(char*) [140]
+                0.00    0.00       1/4           tinyxml2::XMLElement::ParseDeep(char*, tinyxml2::StrPair*) [81]
+                0.00    0.00       2/4           tinyxml2::XMLDocument::Identify(char*, tinyxml2::XMLNode**) [79]
+[126]    0.0    0.00    0.00       4         tinyxml2::XMLUtil::SkipWhiteSpace(char*) [126]
+                0.00    0.00       4/5           tinyxml2::XMLUtil::IsUTF8Continuation(char) [122]
+-----------------------------------------------
+                0.00    0.00       1/4           tinyxml2::XMLElement::ParseDeep(char*, tinyxml2::StrPair*) [81]
+                0.00    0.00       3/4           tinyxml2::XMLNode::ParseDeep(char*, tinyxml2::StrPair*) [74]
+[127]    0.0    0.00    0.00       4         tinyxml2::StrPair::Empty() const [127]
+-----------------------------------------------
+                0.00    0.00       1/3           tinyxml2::XMLNode::FirstChildElement(char const*) const [2]
+                0.00    0.00       2/3           tinyxml2::XMLNode::ParseDeep(char*, tinyxml2::StrPair*) [74]
+[128]    0.0    0.00    0.00       3         tinyxml2::XMLNode::ToElement() [128]
+-----------------------------------------------
+                0.00    0.00       1/2           main [24]
+                0.00    0.00       1/2           tinyxml2::XMLDocument::Print(tinyxml2::XMLPrinter*) const [13]
+[129]    0.0    0.00    0.00       2         tinyxml2::XMLPrinter::XMLPrinter(_iobuf*, bool, int) [129]
+                0.00    0.00       2/2           tinyxml2::XMLVisitor::XMLVisitor() [131]
+                0.00    0.00       2/2           tinyxml2::DynArray<char const*, 10>::DynArray() [133]
+                0.00    0.00       2/2           tinyxml2::DynArray<char, 20>::DynArray() [136]
+                0.00    0.00       2/2           tinyxml2::DynArray<char, 20>::Push(char) [135]
+-----------------------------------------------
+                0.00    0.00       1/2           _fu9___ZSt3cin [69]
+                0.00    0.00       1/2           tinyxml2::XMLDocument::Print(tinyxml2::XMLPrinter*) const [13]
+[130]    0.0    0.00    0.00       2         tinyxml2::XMLPrinter::~XMLPrinter() [130]
+                0.00    0.00       2/2           tinyxml2::DynArray<char, 20>::~DynArray() [137]
+                0.00    0.00       2/2           tinyxml2::DynArray<char const*, 10>::~DynArray() [134]
+                0.00    0.00       2/2           tinyxml2::XMLVisitor::~XMLVisitor() [132]
+-----------------------------------------------
+                0.00    0.00       2/2           tinyxml2::XMLPrinter::XMLPrinter(_iobuf*, bool, int) [129]
+[131]    0.0    0.00    0.00       2         tinyxml2::XMLVisitor::XMLVisitor() [131]
+-----------------------------------------------
+                0.00    0.00       2/2           tinyxml2::XMLPrinter::~XMLPrinter() [130]
+[132]    0.0    0.00    0.00       2         tinyxml2::XMLVisitor::~XMLVisitor() [132]
+-----------------------------------------------
+                0.00    0.00       2/2           tinyxml2::XMLPrinter::XMLPrinter(_iobuf*, bool, int) [129]
+[133]    0.0    0.00    0.00       2         tinyxml2::DynArray<char const*, 10>::DynArray() [133]
+-----------------------------------------------
+                0.00    0.00       2/2           tinyxml2::XMLPrinter::~XMLPrinter() [130]
+[134]    0.0    0.00    0.00       2         tinyxml2::DynArray<char const*, 10>::~DynArray() [134]
+-----------------------------------------------
+                0.00    0.00       2/2           tinyxml2::XMLPrinter::XMLPrinter(_iobuf*, bool, int) [129]
+[135]    0.0    0.00    0.00       2         tinyxml2::DynArray<char, 20>::Push(char) [135]
+                0.00    0.00       2/125009      tinyxml2::DynArray<char, 20>::EnsureCapacity(int) [86]
+-----------------------------------------------
+                0.00    0.00       2/2           tinyxml2::XMLPrinter::XMLPrinter(_iobuf*, bool, int) [129]
+[136]    0.0    0.00    0.00       2         tinyxml2::DynArray<char, 20>::DynArray() [136]
+-----------------------------------------------
+                0.00    0.00       2/2           tinyxml2::XMLPrinter::~XMLPrinter() [130]
+[137]    0.0    0.00    0.00       2         tinyxml2::DynArray<char, 20>::~DynArray() [137]
+-----------------------------------------------
+                0.00    0.00       2/2           tinyxml2::XMLNode::ParseDeep(char*, tinyxml2::StrPair*) [74]
+[138]    0.0    0.00    0.00       2         tinyxml2::XMLElement::ClosingType() const [138]
+-----------------------------------------------
+                0.00    0.00       2/2           tinyxml2::MemPoolT<44>::~MemPoolT() [164]
+[139]    0.0    0.00    0.00       2         tinyxml2::DynArray<tinyxml2::MemPoolT<44>::Block*, 10>::Size() const [139]
+-----------------------------------------------
+                0.00    0.00       1/1           tinyxml2::XMLElement::ParseDeep(char*, tinyxml2::StrPair*) [81]
+[140]    0.0    0.00    0.00       1         tinyxml2::XMLElement::ParseAttributes(char*) [140]
+                0.00    0.00       1/4           tinyxml2::XMLUtil::SkipWhiteSpace(char*) [126]
+                0.00    0.00       1/6           tinyxml2::XMLUtil::IsNameStartChar(unsigned char) [121]
+-----------------------------------------------
+                0.00    0.00       1/1           tinyxml2::XMLDocument::Accept(tinyxml2::XMLVisitor*) const [14]
+[141]    0.0    0.00    0.00       1         tinyxml2::XMLPrinter::VisitEnter(tinyxml2::XMLDocument const&) [141]
+                0.00    0.00       1/1           tinyxml2::XMLDocument::ProcessEntities() const [171]
+                0.00    0.00       1/1           tinyxml2::XMLDocument::HasBOM() const [172]
+-----------------------------------------------
+                0.00    0.00       1/1           tinyxml2::XMLDocument::Accept(tinyxml2::XMLVisitor*) const [14]
+[142]    0.0    0.00    0.00       1         tinyxml2::XMLPrinter::VisitExit(tinyxml2::XMLDocument const&) [142]
+-----------------------------------------------
+                0.00    0.00       1/1           main [24]
+[143]    0.0    0.00    0.00       1         tinyxml2::XMLDocument::XMLDocument(bool, tinyxml2::Whitespace) [143]
+                0.00    0.00       1/25003       tinyxml2::XMLNode::XMLNode(tinyxml2::XMLDocument*) [91]
+                0.00    0.00       1/1           tinyxml2::MemPoolT<52>::MemPoolT() [167]
+                0.00    0.00       1/1           tinyxml2::MemPoolT<36>::MemPoolT() [158]
+                0.00    0.00       1/1           tinyxml2::MemPoolT<48>::MemPoolT() [165]
+                0.00    0.00       1/1           tinyxml2::MemPoolT<44>::MemPoolT() [163]
+-----------------------------------------------
+                0.00    0.00       1/1           tinyxml2::XMLDocument::Identify(char*, tinyxml2::XMLNode**) [79]
+[144]    0.0    0.00    0.00       1         tinyxml2::XMLDeclaration::XMLDeclaration(tinyxml2::XMLDocument*) [144]
+                0.00    0.00       1/25003       tinyxml2::XMLNode::XMLNode(tinyxml2::XMLDocument*) [91]
+-----------------------------------------------
+                                   1             tinyxml2::XMLNode::DeleteChildren() <cycle 1> [35]
+[145]    0.0    0.00    0.00       1         tinyxml2::XMLDeclaration::~XMLDeclaration() <cycle 1> [145]
+                                   1             tinyxml2::XMLNode::~XMLNode() <cycle 1> [58]
+-----------------------------------------------
+                0.00    0.00       1/1           tinyxml2::XMLDocument::Parse(char const*, unsigned int) [25]
+[146]    0.0    0.00    0.00       1         tinyxml2::XMLUtil::SkipWhiteSpace(char const*) [146]
+                0.00    0.00       1/5           tinyxml2::XMLUtil::IsUTF8Continuation(char) [122]
+-----------------------------------------------
+                0.00    0.00       1/1           tinyxml2::MemPoolT<36>::MemPoolT() [158]
+[147]    0.0    0.00    0.00       1         tinyxml2::DynArray<tinyxml2::MemPoolT<36>::Block*, 10>::DynArray() [147]
+-----------------------------------------------
+                0.00    0.00       1/1           tinyxml2::MemPoolT<36>::~MemPoolT() [159]
+[148]    0.0    0.00    0.00       1         tinyxml2::DynArray<tinyxml2::MemPoolT<36>::Block*, 10>::~DynArray() [148]
+-----------------------------------------------
+                0.00    0.00       1/1           tinyxml2::DynArray<tinyxml2::MemPoolT<44>::Block*, 10>::Push(tinyxml2::MemPoolT<44>::Block*) [150]
+[149]    0.0    0.00    0.00       1         tinyxml2::DynArray<tinyxml2::MemPoolT<44>::Block*, 10>::EnsureCapacity(int) [149]
+-----------------------------------------------
+                0.00    0.00       1/1           tinyxml2::MemPoolT<44>::Alloc() [162]
+[150]    0.0    0.00    0.00       1         tinyxml2::DynArray<tinyxml2::MemPoolT<44>::Block*, 10>::Push(tinyxml2::MemPoolT<44>::Block*) [150]
+                0.00    0.00       1/1           tinyxml2::DynArray<tinyxml2::MemPoolT<44>::Block*, 10>::EnsureCapacity(int) [149]
+-----------------------------------------------
+                0.00    0.00       1/1           tinyxml2::MemPoolT<44>::MemPoolT() [163]
+[151]    0.0    0.00    0.00       1         tinyxml2::DynArray<tinyxml2::MemPoolT<44>::Block*, 10>::DynArray() [151]
+-----------------------------------------------
+                0.00    0.00       1/1           tinyxml2::MemPoolT<44>::~MemPoolT() [164]
+[152]    0.0    0.00    0.00       1         tinyxml2::DynArray<tinyxml2::MemPoolT<44>::Block*, 10>::~DynArray() [152]
+-----------------------------------------------
+                0.00    0.00       1/1           tinyxml2::MemPoolT<44>::~MemPoolT() [164]
+[153]    0.0    0.00    0.00       1         tinyxml2::DynArray<tinyxml2::MemPoolT<44>::Block*, 10>::operator[](int) [153]
+-----------------------------------------------
+                0.00    0.00       1/1           tinyxml2::MemPoolT<48>::MemPoolT() [165]
+[154]    0.0    0.00    0.00       1         tinyxml2::DynArray<tinyxml2::MemPoolT<48>::Block*, 10>::DynArray() [154]
+-----------------------------------------------
+                0.00    0.00       1/1           tinyxml2::MemPoolT<48>::~MemPoolT() [166]
+[155]    0.0    0.00    0.00       1         tinyxml2::DynArray<tinyxml2::MemPoolT<48>::Block*, 10>::~DynArray() [155]
+-----------------------------------------------
+                0.00    0.00       1/1           tinyxml2::MemPoolT<52>::MemPoolT() [167]
+[156]    0.0    0.00    0.00       1         tinyxml2::DynArray<tinyxml2::MemPoolT<52>::Block*, 10>::DynArray() [156]
+-----------------------------------------------
+                0.00    0.00       1/1           tinyxml2::MemPoolT<52>::~MemPoolT() [168]
+[157]    0.0    0.00    0.00       1         tinyxml2::DynArray<tinyxml2::MemPoolT<52>::Block*, 10>::~DynArray() [157]
+-----------------------------------------------
+                0.00    0.00       1/1           tinyxml2::XMLDocument::XMLDocument(bool, tinyxml2::Whitespace) [143]
+[158]    0.0    0.00    0.00       1         tinyxml2::MemPoolT<36>::MemPoolT() [158]
+                0.00    0.00       1/4           tinyxml2::MemPool::MemPool() [123]
+                0.00    0.00       1/1           tinyxml2::DynArray<tinyxml2::MemPoolT<36>::Block*, 10>::DynArray() [147]
+-----------------------------------------------
+                0.00    0.00       1/1           tinyxml2::XMLDocument::~XMLDocument() [68]
+[159]    0.0    0.00    0.00       1         tinyxml2::MemPoolT<36>::~MemPoolT() [159]
+                0.00    0.00     223/223         tinyxml2::DynArray<tinyxml2::MemPoolT<36>::Block*, 10>::Size() const [117]
+                0.00    0.00     222/222         tinyxml2::DynArray<tinyxml2::MemPoolT<36>::Block*, 10>::operator[](int) [120]
+                0.00    0.00       1/1           tinyxml2::DynArray<tinyxml2::MemPoolT<36>::Block*, 10>::~DynArray() [148]
+                0.00    0.00       1/4           tinyxml2::MemPool::~MemPool() [124]
+-----------------------------------------------
+                0.00    0.00       1/1           tinyxml2::XMLNode::InsertEndChild(tinyxml2::XMLNode*) [92]
+[160]    0.0    0.00    0.00       1         tinyxml2::MemPoolT<44>::SetTracked() [160]
+-----------------------------------------------
+                0.00    0.00       1/1           tinyxml2::XMLNode::DeleteChildren() <cycle 1> [35]
+[161]    0.0    0.00    0.00       1         tinyxml2::MemPoolT<44>::Free(void*) [161]
+-----------------------------------------------
+                0.00    0.00       1/1           tinyxml2::XMLDocument::Identify(char*, tinyxml2::XMLNode**) [79]
+[162]    0.0    0.00    0.00       1         tinyxml2::MemPoolT<44>::Alloc() [162]
+                0.00    0.00       1/1           tinyxml2::DynArray<tinyxml2::MemPoolT<44>::Block*, 10>::Push(tinyxml2::MemPoolT<44>::Block*) [150]
+-----------------------------------------------
+                0.00    0.00       1/1           tinyxml2::XMLDocument::XMLDocument(bool, tinyxml2::Whitespace) [143]
+[163]    0.0    0.00    0.00       1         tinyxml2::MemPoolT<44>::MemPoolT() [163]
+                0.00    0.00       1/4           tinyxml2::MemPool::MemPool() [123]
+                0.00    0.00       1/1           tinyxml2::DynArray<tinyxml2::MemPoolT<44>::Block*, 10>::DynArray() [151]
+-----------------------------------------------
+                0.00    0.00       1/1           tinyxml2::XMLDocument::~XMLDocument() [68]
+[164]    0.0    0.00    0.00       1         tinyxml2::MemPoolT<44>::~MemPoolT() [164]
+                0.00    0.00       2/2           tinyxml2::DynArray<tinyxml2::MemPoolT<44>::Block*, 10>::Size() const [139]
+                0.00    0.00       1/1           tinyxml2::DynArray<tinyxml2::MemPoolT<44>::Block*, 10>::operator[](int) [153]
+                0.00    0.00       1/1           tinyxml2::DynArray<tinyxml2::MemPoolT<44>::Block*, 10>::~DynArray() [152]
+                0.00    0.00       1/4           tinyxml2::MemPool::~MemPool() [124]
+-----------------------------------------------
+                0.00    0.00       1/1           tinyxml2::XMLDocument::XMLDocument(bool, tinyxml2::Whitespace) [143]
+[165]    0.0    0.00    0.00       1         tinyxml2::MemPoolT<48>::MemPoolT() [165]
+                0.00    0.00       1/4           tinyxml2::MemPool::MemPool() [123]
+                0.00    0.00       1/1           tinyxml2::DynArray<tinyxml2::MemPoolT<48>::Block*, 10>::DynArray() [154]
+-----------------------------------------------
+                0.00    0.00       1/1           tinyxml2::XMLDocument::~XMLDocument() [68]
+[166]    0.0    0.00    0.00       1         tinyxml2::MemPoolT<48>::~MemPoolT() [166]
+                0.00    0.00       1/1           tinyxml2::DynArray<tinyxml2::MemPoolT<48>::Block*, 10>::Size() const [173]
+                0.00    0.00       1/1           tinyxml2::DynArray<tinyxml2::MemPoolT<48>::Block*, 10>::~DynArray() [155]
+                0.00    0.00       1/4           tinyxml2::MemPool::~MemPool() [124]
+-----------------------------------------------
+                0.00    0.00       1/1           tinyxml2::XMLDocument::XMLDocument(bool, tinyxml2::Whitespace) [143]
+[167]    0.0    0.00    0.00       1         tinyxml2::MemPoolT<52>::MemPoolT() [167]
+                0.00    0.00       1/4           tinyxml2::MemPool::MemPool() [123]
+                0.00    0.00       1/1           tinyxml2::DynArray<tinyxml2::MemPoolT<52>::Block*, 10>::DynArray() [156]
+-----------------------------------------------
+                0.00    0.00       1/1           tinyxml2::XMLDocument::~XMLDocument() [68]
+[168]    0.0    0.00    0.00       1         tinyxml2::MemPoolT<52>::~MemPoolT() [168]
+                0.00    0.00     322/322         tinyxml2::DynArray<tinyxml2::MemPoolT<52>::Block*, 10>::Size() const [113]
+                0.00    0.00     321/321         tinyxml2::DynArray<tinyxml2::MemPoolT<52>::Block*, 10>::operator[](int) [116]
+                0.00    0.00       1/1           tinyxml2::DynArray<tinyxml2::MemPoolT<52>::Block*, 10>::~DynArray() [157]
+                0.00    0.00       1/4           tinyxml2::MemPool::~MemPool() [124]
+-----------------------------------------------
+                0.00    0.00       1/1           _fu8___ZSt3cin [12]
+[169]    0.0    0.00    0.00       1         tinyxml2::XMLPrinter::CStr() const [169]
+                0.00    0.00       1/1           tinyxml2::DynArray<char, 20>::Mem() const [174]
+-----------------------------------------------
+                0.00    0.00       1/1           _fu8___ZSt3cin [12]
+[170]    0.0    0.00    0.00       1         tinyxml2::XMLPrinter::CStrSize() const [170]
+                0.00    0.00       1/1           tinyxml2::DynArray<char, 20>::Size() const [175]
+-----------------------------------------------
+                0.00    0.00       1/1           tinyxml2::XMLPrinter::VisitEnter(tinyxml2::XMLDocument const&) [141]
+[171]    0.0    0.00    0.00       1         tinyxml2::XMLDocument::ProcessEntities() const [171]
+-----------------------------------------------
+                0.00    0.00       1/1           tinyxml2::XMLPrinter::VisitEnter(tinyxml2::XMLDocument const&) [141]
+[172]    0.0    0.00    0.00       1         tinyxml2::XMLDocument::HasBOM() const [172]
+-----------------------------------------------
+                0.00    0.00       1/1           tinyxml2::MemPoolT<48>::~MemPoolT() [166]
+[173]    0.0    0.00    0.00       1         tinyxml2::DynArray<tinyxml2::MemPoolT<48>::Block*, 10>::Size() const [173]
+-----------------------------------------------
+                0.00    0.00       1/1           tinyxml2::XMLPrinter::CStr() const [169]
+[174]    0.0    0.00    0.00       1         tinyxml2::DynArray<char, 20>::Mem() const [174]
+-----------------------------------------------
+                0.00    0.00       1/1           tinyxml2::XMLPrinter::CStrSize() const [170]
+[175]    0.0    0.00    0.00       1         tinyxml2::DynArray<char, 20>::Size() const [175]
+-----------------------------------------------
+                0.00    0.00       1/1           main [24]
+[176]    0.0    0.00    0.00       1         std::operator|(std::_Ios_Openmode, std::_Ios_Openmode) [176]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+
+Index by function name
+
+  [40] tinyxml2::XMLElement::SetAttribute(char const*, char const*) [92] tinyxml2::XMLNode::InsertEndChild(tinyxml2::XMLNode*) [164] tinyxml2::MemPoolT<44>::~MemPoolT()
+  [21] tinyxml2::XMLElement::SetAttribute(char const*, bool) [1] tinyxml2::XMLNode::FirstChildElement(char const*) [165] tinyxml2::MemPoolT<48>::MemPoolT()
+  [41] tinyxml2::XMLElement::SetAttribute(char const*, double) [93] tinyxml2::XMLNode::Unlink(tinyxml2::XMLNode*) [166] tinyxml2::MemPoolT<48>::~MemPoolT()
+  [42] tinyxml2::XMLElement::SetAttribute(char const*, int) [30] tinyxml2::XMLNode::SetValue(char const*, bool) [100] tinyxml2::MemPoolT<52>::SetTracked()
+ [140] tinyxml2::XMLElement::ParseAttributes(char*) [74] tinyxml2::XMLNode::ParseDeep(char*, tinyxml2::StrPair*) [101] tinyxml2::MemPoolT<52>::Free(void*)
+  [22] tinyxml2::XMLElement::FindOrCreateAttribute(char const*) [128] tinyxml2::XMLNode::ToElement() [102] tinyxml2::MemPoolT<52>::Alloc()
+  [27] tinyxml2::XMLElement::SetName(char const*, bool) [91] tinyxml2::XMLNode::XMLNode(tinyxml2::XMLDocument*) [167] tinyxml2::MemPoolT<52>::MemPoolT()
+  [81] tinyxml2::XMLElement::ParseDeep(char*, tinyxml2::StrPair*) [58] tinyxml2::XMLNode::~XMLNode() [168] tinyxml2::MemPoolT<52>::~MemPoolT()
+   [8] tinyxml2::XMLElement::ToElement() [125] tinyxml2::XMLUtil::IsNameChar(unsigned char) [138] tinyxml2::XMLElement::ClosingType() const
+  [99] tinyxml2::XMLElement::XMLElement(tinyxml2::XMLDocument*) [4] tinyxml2::XMLUtil::StringEqual(char const*, char const*, int) [60] tinyxml2::XMLElement::IntAttribute(char const*) const
+  [55] tinyxml2::XMLElement::~XMLElement() [146] tinyxml2::XMLUtil::SkipWhiteSpace(char const*) [61] tinyxml2::XMLElement::BoolAttribute(char const*) const
+  [44] tinyxml2::XMLPrinter::PushHeader(bool, bool) [126] tinyxml2::XMLUtil::SkipWhiteSpace(char*) [53] tinyxml2::XMLElement::FindAttribute(char const*) const
+  [16] tinyxml2::XMLPrinter::VisitEnter(tinyxml2::XMLElement const&, tinyxml2::XMLAttribute const*) [121] tinyxml2::XMLUtil::IsNameStartChar(unsigned char) [62] tinyxml2::XMLElement::FloatAttribute(char const*) const
+ [141] tinyxml2::XMLPrinter::VisitEnter(tinyxml2::XMLDocument const&) [122] tinyxml2::XMLUtil::IsUTF8Continuation(char) [63] tinyxml2::XMLElement::QueryIntAttribute(char const*, int*) const
+  [43] tinyxml2::XMLPrinter::OpenElement(char const*) [110] tinyxml2::XMLUtil::ToInt(char const*, int*) [64] tinyxml2::XMLElement::QueryBoolAttribute(char const*, bool*) const
+  [31] tinyxml2::XMLPrinter::PrintString(char const*, bool) [104] tinyxml2::XMLUtil::ToStr(bool, char*, int) [65] tinyxml2::XMLElement::QueryFloatAttribute(char const*, float*) const
+  [77] tinyxml2::XMLPrinter::SealElement() [105] tinyxml2::XMLUtil::ToStr(double, char*, int) [5] tinyxml2::XMLElement::Name() const
+  [51] tinyxml2::XMLPrinter::CloseElement() [88] tinyxml2::XMLUtil::ToStr(int, char*, int) [15] tinyxml2::XMLElement::Accept(tinyxml2::XMLVisitor*) const
+  [23] tinyxml2::XMLPrinter::PushAttribute(char const*, char const*) [111] tinyxml2::XMLUtil::ToBool(char const*, bool*) [66] tinyxml2::XMLElement::Attribute(char const*, char const*) const
+  [78] tinyxml2::XMLPrinter::PushDeclaration(char const*) [26] tinyxml2::XMLUtil::ReadBOM(char const*, bool*) [169] tinyxml2::XMLPrinter::CStr() const
+  [34] tinyxml2::XMLPrinter::Print(char const*, ...) [112] tinyxml2::XMLUtil::ToFloat(char const*, float*) [170] tinyxml2::XMLPrinter::CStrSize() const
+  [75] tinyxml2::XMLPrinter::Visit(tinyxml2::XMLDeclaration const&) [94] tinyxml2::DynArray<char const*, 10>::EnsureCapacity(int) [171] tinyxml2::XMLDocument::ProcessEntities() const
+  [52] tinyxml2::XMLPrinter::VisitExit(tinyxml2::XMLElement const&) [95] tinyxml2::DynArray<char const*, 10>::Pop() [13] tinyxml2::XMLDocument::Print(tinyxml2::XMLPrinter*) const
+ [142] tinyxml2::XMLPrinter::VisitExit(tinyxml2::XMLDocument const&) [96] tinyxml2::DynArray<char const*, 10>::Push(char const*) [14] tinyxml2::XMLDocument::Accept(tinyxml2::XMLVisitor*) const
+ [129] tinyxml2::XMLPrinter::XMLPrinter(_iobuf*, bool, int) [133] tinyxml2::DynArray<char const*, 10>::DynArray() [172] tinyxml2::XMLDocument::HasBOM() const
+ [130] tinyxml2::XMLPrinter::~XMLPrinter() [134] tinyxml2::DynArray<char const*, 10>::~DynArray() [71] tinyxml2::XMLAttribute::QueryIntValue(int*) const
+ [131] tinyxml2::XMLVisitor::XMLVisitor() [118] tinyxml2::DynArray<tinyxml2::MemPoolT<36>::Block*, 10>::EnsureCapacity(int) [72] tinyxml2::XMLAttribute::QueryBoolValue(bool*) const
+ [132] tinyxml2::XMLVisitor::~XMLVisitor() [119] tinyxml2::DynArray<tinyxml2::MemPoolT<36>::Block*, 10>::Push(tinyxml2::MemPoolT<36>::Block*) [73] tinyxml2::XMLAttribute::QueryFloatValue(float*) const
+  [28] tinyxml2::XMLDocument::NewElement(char const*) [147] tinyxml2::DynArray<tinyxml2::MemPoolT<36>::Block*, 10>::DynArray() [57] tinyxml2::XMLAttribute::Name() const
+  [59] tinyxml2::XMLDocument::RootElement() [148] tinyxml2::DynArray<tinyxml2::MemPoolT<36>::Block*, 10>::~DynArray() [108] tinyxml2::XMLAttribute::Next() const
+  [70] tinyxml2::XMLDocument::Clear() [120] tinyxml2::DynArray<tinyxml2::MemPoolT<36>::Block*, 10>::operator[](int) [67] tinyxml2::XMLAttribute::Value() const
+  [25] tinyxml2::XMLDocument::Parse(char const*, unsigned int) [149] tinyxml2::DynArray<tinyxml2::MemPoolT<44>::Block*, 10>::EnsureCapacity(int) [76] tinyxml2::XMLDeclaration::Accept(tinyxml2::XMLVisitor*) const
+  [79] tinyxml2::XMLDocument::Identify(char*, tinyxml2::XMLNode**) [150] tinyxml2::DynArray<tinyxml2::MemPoolT<44>::Block*, 10>::Push(tinyxml2::MemPoolT<44>::Block*) [127] tinyxml2::StrPair::Empty() const
+ [143] tinyxml2::XMLDocument::XMLDocument(bool, tinyxml2::Whitespace) [151] tinyxml2::DynArray<tinyxml2::MemPoolT<44>::Block*, 10>::DynArray() [97] tinyxml2::XMLNode::FirstChild() const
+  [68] tinyxml2::XMLDocument::~XMLDocument() [152] tinyxml2::DynArray<tinyxml2::MemPoolT<44>::Block*, 10>::~DynArray() [98] tinyxml2::XMLNode::NextSibling() const
+  [46] tinyxml2::XMLAttribute::SetAttribute(char const*) [153] tinyxml2::DynArray<tinyxml2::MemPoolT<44>::Block*, 10>::operator[](int) [2] tinyxml2::XMLNode::FirstChildElement(char const*) const
+  [29] tinyxml2::XMLAttribute::SetAttribute(bool) [154] tinyxml2::DynArray<tinyxml2::MemPoolT<48>::Block*, 10>::DynArray() [6] tinyxml2::XMLNode::Value() const
+  [47] tinyxml2::XMLAttribute::SetAttribute(double) [155] tinyxml2::DynArray<tinyxml2::MemPoolT<48>::Block*, 10>::~DynArray() [117] tinyxml2::DynArray<tinyxml2::MemPoolT<36>::Block*, 10>::Size() const
+  [48] tinyxml2::XMLAttribute::SetAttribute(int) [114] tinyxml2::DynArray<tinyxml2::MemPoolT<52>::Block*, 10>::EnsureCapacity(int) [139] tinyxml2::DynArray<tinyxml2::MemPoolT<44>::Block*, 10>::Size() const
+  [49] tinyxml2::XMLAttribute::SetName(char const*) [115] tinyxml2::DynArray<tinyxml2::MemPoolT<52>::Block*, 10>::Push(tinyxml2::MemPoolT<52>::Block*) [173] tinyxml2::DynArray<tinyxml2::MemPoolT<48>::Block*, 10>::Size() const
+ [103] tinyxml2::XMLAttribute::XMLAttribute() [156] tinyxml2::DynArray<tinyxml2::MemPoolT<52>::Block*, 10>::DynArray() [113] tinyxml2::DynArray<tinyxml2::MemPoolT<52>::Block*, 10>::Size() const
+  [56] tinyxml2::XMLAttribute::~XMLAttribute() [157] tinyxml2::DynArray<tinyxml2::MemPoolT<52>::Block*, 10>::~DynArray() [174] tinyxml2::DynArray<char, 20>::Mem() const
+  [82] tinyxml2::XMLDeclaration::ParseDeep(char*, tinyxml2::StrPair*) [116] tinyxml2::DynArray<tinyxml2::MemPoolT<52>::Block*, 10>::operator[](int) [175] tinyxml2::DynArray<char, 20>::Size() const
+ [144] tinyxml2::XMLDeclaration::XMLDeclaration(tinyxml2::XMLDocument*) [86] tinyxml2::DynArray<char, 20>::EnsureCapacity(int) [176] std::operator|(std::_Ios_Openmode, std::_Ios_Openmode)
+ [145] tinyxml2::XMLDeclaration::~XMLDeclaration() [135] tinyxml2::DynArray<char, 20>::Push(char) [109] std::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*)
+ [123] tinyxml2::MemPool::MemPool() [87] tinyxml2::DynArray<char, 20>::PushArr(int) [90] operator new(unsigned int, void*)
+ [124] tinyxml2::MemPool::~MemPool() [136] tinyxml2::DynArray<char, 20>::DynArray() [37] __chkstk_ms
+  [80] tinyxml2::StrPair::Set(char*, char*, int) [137] tinyxml2::DynArray<char, 20>::~DynArray() [38] __freedtoa
+  [45] tinyxml2::StrPair::Reset() [106] tinyxml2::MemPoolT<36>::SetTracked() [17] __gdtoa
+   [7] tinyxml2::StrPair::GetStr() [107] tinyxml2::MemPoolT<36>::Free(void*) [18] __mingw_pformat
+  [11] tinyxml2::StrPair::SetStr(char const*, int) [36] tinyxml2::MemPoolT<36>::Alloc() [19] __pformat_int
+  [83] tinyxml2::StrPair::ParseName(char*) [158] tinyxml2::MemPoolT<36>::MemPoolT() [20] __pformat_putc
+  [84] tinyxml2::StrPair::ParseText(char*, char const*, int) [159] tinyxml2::MemPoolT<36>::~MemPoolT() [10] _fu0___ZSt4cout
+  [89] tinyxml2::StrPair::StrPair() [160] tinyxml2::MemPoolT<44>::SetTracked() [39] snprintf
+  [54] tinyxml2::StrPair::~StrPair() [161] tinyxml2::MemPoolT<44>::Free(void*) [32] <cycle 1>
+  [33] tinyxml2::XMLNode::DeleteChild(tinyxml2::XMLNode*) [162] tinyxml2::MemPoolT<44>::Alloc()
+  [35] tinyxml2::XMLNode::DeleteChildren() [163] tinyxml2::MemPoolT<44>::MemPoolT()

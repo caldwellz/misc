@@ -1,0 +1,3 @@
+GitHub Upload Notes, 2018: These were several of my half-baked pre/post Overmind game engine attempts showing more forays into using CMake, Doxygen, POCO, 3D engines, and some other tools / techniques / libraries. See Overmind for my first actual interesting technical demo.
+The TwilightCodex Messaging version does have an interesting in-memory Property database using an XML tree and a (you guessed it) component messaging system though, plus some pregenerated HTML documentation.
+Also, any references to "Twilight Codex" actually have nothing to do with a certain popular book series, as you might think; I simply thought it was a cool project name and didn't realize then that it had already been snatched. 

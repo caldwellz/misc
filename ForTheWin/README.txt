@@ -1,0 +1,1 @@
+GitHub Upload Notes, 2018: This was a goofy little toy program I threw together back in 2012 to learn more about Windows API programming, CMake, and program modularization. Basically I took 'isprime' and 'pispigot' from Utils/ and mashed them into one program as modules. I do not know how complete it is.

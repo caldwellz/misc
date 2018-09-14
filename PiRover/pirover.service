@@ -1,0 +1,15 @@
+[Unit]
+Description=PiRover service
+After=bluetooth.service
+ConditionPathExists=/home/pi/Main.py
+
+[Service]
+# EnvironmentFile=-/etc/default/config
+ExecStart=/usr/bin/python3 /home/pi/Main.py
+# ExecReload=/bin/true
+KillMode=process
+Restart=always
+RestartSec=0
+
+[Install]
+WantedBy=multi-user.target

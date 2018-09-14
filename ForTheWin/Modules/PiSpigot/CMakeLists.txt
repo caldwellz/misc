@@ -1,0 +1,14 @@
+
+set(INCLUDE_PiSpigot CACHE BOOL OFF)
+if(INCLUDE_PiSpigot)
+	set(SOURCE_FILES
+		${SOURCE_FILES}
+
+		${CMAKE_CURRENT_SOURCE_DIR}/PiSpigot.c
+		${CMAKE_CURRENT_SOURCE_DIR}/PiSpigot.h
+		${CMAKE_CURRENT_SOURCE_DIR}/PiSpigot-dlg.cpp
+		${CMAKE_CURRENT_SOURCE_DIR}/PiSpigot-dlg.hpp
+
+		CACHE INTERNAL ""
+	)
+endif()

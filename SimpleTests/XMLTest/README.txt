@@ -1,0 +1,1 @@
+GitHub Upload Notes, 2018: Various tests for when I was figuring out how to use TinyXML2, probably in a game engine (I think I had already used it in my Fireworks project by this point, or maybe these were related somehow). MultiDocPrint was written March 2013; StressTest was written October 2013.

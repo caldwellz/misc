@@ -1,0 +1,1 @@
+GitHub Upload Notes, 2018: These are a bunch of one-shot test programs, usually for algorithms I had put together or library functionality that I found interesting; see subfolders and/or individual file headers for details.
