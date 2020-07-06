@@ -1,0 +1,5 @@
+build/
+docs/
+include/MAGES/Globals.hxx
+*.orig
+notes.txt

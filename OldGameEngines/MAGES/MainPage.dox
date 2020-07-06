@@ -1,0 +1,43 @@
+/** \mainpage
+
+\section intro_sec Introduction
+Long, long ago, in a project far, far away, I was tinkering with a 3D graphics
+engine when I heard about these things called 'entity systems'. I hunted around
+for a while, but then realized that (at the time) there were no good, portable
+C++ implementations. So, being the fresh starry-eyed programmer that I was, I
+decided to write my own new game engine with one at the core, not realizing what
+a task it would be.\n
+Several years, evolutions, sabbaticals, scraps and rewrites later, MAGES was born.
+It too was originally intended to revolve around an entity system, but then the
+PropertyDB was conceived along with the idea of 'modularizing' everything by piping
+things through the DB. Thus the name 'Modular Application / Game Engine System'.
+One of these days it will hopefully become truly modular (via dynamic libraries)
+and maybe even get an entity system of sorts.
+
+\section usage_sec Usage
+Top-level usage is hopefully fairly straightforward. Just create an instance of
+the Core class and pass Subsystem instances to its registerSubsystem()
+method, then call Core.update() every frame (unless of course all of your
+Subsystems are running in a seperate thread. See Core::registerSubsystem()
+for details).\n
+The plan is to offer a bunch of pre-written Subsystems (a.k.a modules) that you
+just have to enable in your build, but chances are you will want to write your
+own custom one at some point. If/When that occasion comes, just inherit the
+Subsystem base into your own class, then override the Subsystem::update() and
+name() functions at the very least, and probably initialize() as well. From there
+your subsystem will be given a pointer to the friendly local PropertyDB, as well
+as a _coreReady flag telling the state of the associated Core. For now, the
+subsystem is expected to check the flag regularly, and when it becomes false (due
+to Core::shutdown()) the subsystem should clean up its resources and return from
+its update()/run() function. See TCore.cxx (the Core test) for an example
+of custom Subsystem creation and PropertyDB usage.
+
+\section importantnotes_sec Important Notes
+One of the biggest things to keep in mind when building MAGES is that the design
+decision has been made to use several C++11 features. This is due to the philosophy
+that any compiler that has any business flirting with a game engine should be
+modern enough to support C++11. I've tried to keep the usages fairly simple though
+and have left a comment wherever they're used, so if you can't support C++11 for
+some reason just grep the source code for "C++11 feature" and edit to your heart's
+content. Happy hacking!
+*/

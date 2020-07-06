@@ -1,0 +1,101 @@
+/***************************************************
+* MAGES: Modular Application / Game Engine System  *
+*       Copyright (C) 2016 the MAGES Project       *
+****************************************************
+* This Source Code Form is subject to the terms of *
+* the Mozilla Public License, v. 2.0. If a copy of *
+* the MPL was not distributed with this file, You  *
+* can obtain one at http://mozilla.org/MPL/2.0/.   *
+***************************************************/
+
+/** \file Globals.hxx
+*   \brief Home of various global constants and enums. */
+
+#ifndef _MAGES_GLOBALS_HXX_
+#define _MAGES_GLOBALS_HXX_
+
+#include <cmath>
+#include <limits.h>
+#include <string>
+
+#include <Poco/Logger.h>
+#include <Poco/Types.h>
+using Poco::Logger;
+using Poco::Int32;
+using Poco::Int64;
+using Poco::UInt8;
+using Poco::UInt16;
+using Poco::UInt32;
+using Poco::UInt64;
+
+#ifndef NDEBUG
+	#ifndef DEBUG
+		#define DEBUG
+	#endif
+#endif
+
+/// \name Version numbering
+///@{
+#define MAGES_VERSION_MAJOR @MAGES_VERSION_MAJOR@
+#define MAGES_VERSION_MINOR @MAGES_VERSION_MINOR@
+#define MAGES_VERSION_PATCH @MAGES_VERSION_PATCH@
+#define MAGES_VERSION "@MAGES_VERSION_MAJOR@.@MAGES_VERSION_MINOR@.@MAGES_VERSION_PATCH@"
+///@}
+
+namespace MAGES {
+/// \name Abstraction typedefs
+///@{
+	typedef std::string String;
+	typedef UInt16 Id;
+///@}
+
+/// Processing requirements
+// TODO: Change this into an enum (if we keep it)
+	static const UInt32 PROC_CPU_LOW = 1;
+	static const UInt32 PROC_CPU_HIGH = 2;
+
+/// Other defaults
+	static const UInt32 DEFAULT_CHAR_SIZE = pow(2, CHAR_BIT);
+	static const Id ID_MAX = pow(2, (sizeof(Id) * CHAR_BIT)) - 1;
+
+/// Recognized file formats
+	enum FileFormat {
+		FMT_AUTO = 1,
+		FMT_JSON,
+		FMT_JSON_COMPRESSED,
+//		FMT_XML,
+//		FMT_XML_COMPRESSED,
+	};
+
+/// Recognized data types
+	enum RecognizedDataType {
+		RDT_UNKNOWN = 0,
+		RDT_INT32,
+		RDT_INT64,
+		RDT_UINT32,
+		RDT_UINT64,
+		RDT_BOOL,
+//		RDT_CHAR,
+		RDT_FLOAT,
+		RDT_DOUBLE,
+		RDT_STRING,
+	};
+
+/// Get the RecognizedDataType value of a type_info.
+	inline RecognizedDataType checkType(std::type_info* t) {
+		if(t != NULL) {
+			if(typeid(Int32) == (*t)) return RDT_INT32;
+			if(typeid(Int64) == (*t)) return RDT_INT64;
+			if(typeid(UInt32) == (*t)) return RDT_UINT32;
+			if(typeid(UInt64) == (*t)) return RDT_UINT64;
+			if(typeid(bool) == (*t)) return RDT_BOOL;
+//			if(typeid(char) == (*t)) return RDT_CHAR;
+			if(typeid(float) == (*t)) return RDT_FLOAT;
+			if(typeid(double) == (*t)) return RDT_DOUBLE;
+			if(typeid(String) == (*t)) return RDT_STRING;
+		}
+
+		return RDT_UNKNOWN;
+	}
+}
+#endif //_MAGES_GLOBALS_HXX_

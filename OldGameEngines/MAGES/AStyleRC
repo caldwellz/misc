@@ -1,0 +1,16 @@
+--exclude=CMakeLists.txt
+--preserve-date
+--lineend=linux
+--style=java
+--indent=tab=4
+--indent-classes
+--indent-modifiers
+--indent-switches
+--indent-cases
+--indent-namespaces
+--indent-preprocessor
+--indent-preproc-block
+--pad-oper
+--unpad-paren
+--convert-tabs
+--align-pointer=type
